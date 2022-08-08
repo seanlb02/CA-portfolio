@@ -1,0 +1,28 @@
+
+    
+    navbar { display:flex;
+        margin: 10%;
+        gap: 7%;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        font-family: monospace;
+
+
+
+    }
+    div{display:flex; 
+        background-color: black;
+        border-radius: 15px;
+        font-size: xx-large;
+        color: white;
+        padding:10px;
+        align-items: center;
+        text-align:center;
+        justify-content: center;
+        
+    }
+
+    h1{
+        color:red;
+    }
