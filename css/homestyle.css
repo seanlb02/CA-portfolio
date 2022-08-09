@@ -1,12 +1,20 @@
 
+    header{
+        
+        width:100%;
+        height: 15%;
+        border-bottom: 2px solid black;
+    }
     
-    navbar { display:flex;
-        margin: 10%;
-        gap: 7%;
-        text-align: center;
+    welcome{
+        display: flex;
+        justify-items: center;
         align-items: center;
-        justify-content: center;
+        align-content: center;
         font-family: monospace;
+        font-size: xx-large;
+        padding-top:1%;
+
     }
     socialIcon {
         display:flex;
@@ -15,13 +23,22 @@
 
     icons{
         display:flex;
+        
         align-items: center;
         justify-content: right;
-        padding: 1%;
+        margin: 1%;
         gap: 2%;
     }
 
-
+    navbar { display:flex;
+            margin: 7%;
+            gap: 7%;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            font-family: monospace;
+        
+        }
 
 
 
@@ -37,7 +54,14 @@
         cursor: pointer;
         
     }
-
+    a1{
+        color:black;
+        cursor: pointer;
+    }
+    a{
+        color: white;
+        text-decoration: none;
+    }
     div:hover{
         opacity: 0.7;
     }
@@ -47,29 +71,35 @@
     }
     
     about{
-        
-        margin-top: 20%;
+        position:absolute;
+        background-color: #e1e1e6;
+        padding-top:5%;
+        padding-bottom:10%;
+        padding-right:6%;
+        width: auto;
+        border-bottom: 2px solid black;
     }
 
     AboutTitle{
         display: flex;
         align-items: left;
-        margin-left:10%;
+        margin-left:12%;
         font-size: xxx-large;
         font-family: monospace;
+        background-color: #e1e1e6;
     }
 
     AboutSection{
         display: flex;
         align-items: center;
         justify-content: left;
-        padding-left: 35%;
-        padding-top: 5%;
+        padding-left: 30%;
+        margin-top: 5%;
         text-align: justify;
         width:50%;
         font-family: monospace;
         font-size:large;
-
+        background-color: #e1e1e6;
     }
 
     contact{
@@ -93,5 +123,5 @@
 
     footer{
         width:100%;
-        border-top: 5px solid black;
+        border-top: 2px solid black;
     }
