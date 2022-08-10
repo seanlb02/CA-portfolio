@@ -2,6 +2,7 @@
 
 <html>
     <head>
+        <meta charset="UTF-8" />
         <link rel="stylesheet" href="../css/homestyle.css">
     </head>
     <header>
@@ -17,26 +18,32 @@
 
         
         <navbar>
-                <div> <a href="cv.html">Resume</a></div>
-                <div href="Portfolio">Portfolio</div>
-                <div href="contact">Contact</div>
-                <div href="bloglist.html">Blog</div>
+                <div class="navItems"> <a href="cv.html">Resume</a></div>
+                <div class="navItems" href="Portfolio">Portfolio</div>
+                <div class="navItems" href="contact">Contact</div>
+                <div class="navItems" href="bloglist.html">Blog</div>
         </navbar>
 
-        <about>
+        <div class="aboutContainer">
                 <AboutTitle>About me</AboutTitle>
                 <AboutSection>Hi. My name is Sean.
                     <br>I am a full-stack developer with a background in HTML/CSS, ReactJS and Flask.
                     <br></br>
                     <br>My projects [will] feature a range of functionalities not limited to: profile creation,
-                        payments integration (Stripe), paywalls, RESTful APIs and 
+                        payments integration (Stripe), paywalls and media players. 
                 </AboutSection>
 
-        </about>
+        </div>
 
-        <contact id="contact">
-            <email>12708@coderacademy.edu.au</email>
-        </contact>
+        <div class="portfolioContainer" id="Portfolio">
+                <WorkTitle>My projects</WorkTitle>
+            </portfolio>
+        </div>
+        
+        
+        <div class="contact" id="contact">
+                <email>12708@coderacademy.edu.au</email>
+        </div>
 
         
 
