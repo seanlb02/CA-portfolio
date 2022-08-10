@@ -6,7 +6,9 @@
         <link rel="stylesheet" href="../css/homestyle.css">
     </head>
     <header>
-                    <welcome><a1 href="home.html">Hello_world</a1></welcome>
+                    <welcome><a1 href="home.html">Hello_world{
+                        <br>}
+                    </a1></welcome>
                     <icons>
                         <socialIcon>Github icon</socialIcon>
                         <socialIcon>LinkedIn icon</socialIcon>
@@ -16,17 +18,19 @@
     
     <body>
 
-        
+
+        <!-- note here, mozzilla needs <a tag> as well as name=""
+            so both were added in relative links to work in both chrom and FF -->
         <navbar>
-                <div class="navItems"> <a href="cv.html">Resume</a></div>
-                <div class="navItems" href="Portfolio">Portfolio</div>
-                <div class="navItems" href="contact">Contact</div>
+                <div class="navItems" href="cv.html">Resume</div>
+                <div class="navItems" <a href="#Portfolio">Portfolio</div>
+                <div class="navItems"><a href="#contact">Contact</a></div>
                 <div class="navItems" href="bloglist.html">Blog</div>
         </navbar>
 
         <div class="aboutContainer">
                 <AboutTitle>About me</AboutTitle>
-                <AboutSection>Hi. My name is Sean.
+                <AboutSection>Hi. My name is Sean Gyuris.
                     <br>I am a full-stack developer with a background in HTML/CSS, ReactJS and Flask.
                     <br></br>
                     <br>My projects [will] feature a range of functionalities not limited to: profile creation,
@@ -37,12 +41,13 @@
 
         <div class="portfolioContainer" id="Portfolio">
                 <WorkTitle>My projects</WorkTitle>
-            </portfolio>
+            
         </div>
         
         
-        <div class="contact" id="contact">
-                <email>12708@coderacademy.edu.au</email>
+        <div id="contact" name="contact" class="contact">
+                <contactTitle>All enquiries</contactTitle>
+                <a class="email" href = "mailto: 12708@coderacademy.edu.au">12708@coderacademy.edu.au</a>
         </div>
 
         
