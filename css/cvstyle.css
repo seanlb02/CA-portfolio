@@ -1,11 +1,11 @@
 header{
-        
     width:100%;
     border-bottom: 2px solid black;
 }
 
 welcome{
     display: flex;
+    flex-grow: 1;
     justify-items: center;
     align-items: center;
     align-content: center;
@@ -18,10 +18,8 @@ socialIcon {
     display:flex;
     gap: 10%;
 }
-
 icons{
     display:flex;
-    
     align-items: center;
     justify-content: right;
     margin: 1%;
