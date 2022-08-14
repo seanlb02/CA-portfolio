@@ -6,13 +6,11 @@
         position:fixed;
         top:0;
 
-        /* box-shadow: 0px 3px 3px -1px
-                    rgba(207, 194, 194, 0.75);
-        border-bottom: 2px solid black; */
+
     }
-    links{
+    .links{
         margin-inline: auto;
-        max-width: 100%;
+
         display:flex;
         justify-content:flex-end;
         border-bottom: 2px solid black;
@@ -23,7 +21,7 @@
         align-items:center;
         justify-content: flex-start;
         font-family: monospace;
-        font-size: xx-large;
+        font-size: 2.5vmax;
         padding: 2%;
         margin-right:auto;
     
@@ -42,8 +40,53 @@
         align-items: center;
         margin: 1%;
         gap: 2%;
+        margin-right:5%;
+        margin-left:1%;
+
     }
-/* this is the styles for the social media icons */
+
+
+    .hamburger-nav{
+        display:none;
+    }
+
+    .hamburger-nav:checked ~ mobileNav {
+        display:block;
+        margin-left: 4%;
+        margin-right: 5%; 
+    }
+    @media screen and (min-width: 560px){
+        .hamburger-nav, .hamburgerIcon {
+            display: none;
+        }
+    }
+    .Navlist{
+        list-style:none;
+        font-size: 6vmin;
+        font-family:monospace;
+    }
+    li{margin:20px;}
+    mobileNav{
+        position: absolute;
+        text-align: left;
+        align-content:center;
+        align-items: center;
+        top:100%;
+        right:0;
+        width:50%;
+        display: none;
+        background-color: black;
+        color: white;
+        border: solid black;
+
+    }
+    @media screen and (min-width: 560px){
+        mobileNav {
+            display: none;
+        }
+    }
+
+/* this is the css for the social media icons */
 .fa {
     cursor:pointer;
     text-decoration: none;
@@ -77,15 +120,23 @@
 }
 
 
+
     navbar{
         display:flex;
 
         background-color:white;
         align-items: center;
         justify-content: center;
-        width:100%;
+
     }
-    navContent { display:flex;
+
+    @media screen and (max-width: 560px){
+        navbar {
+            display: none;
+        }
+    }
+
+.navcontent { display:flex;
             margin: 5%;
             gap: 7%;
             text-align: center;
@@ -111,35 +162,34 @@
         opacity: 0.7;
     }
     
-    a1{
-        color:black;
-        cursor: pointer;
-    }
     a{
         color: white;
         text-decoration: none;
     }
     
-
-
+    /* this css is for the 'centerpiece 'let's build' animated tagline */
     .centerPiece{
         display:flex;
-        margin-top:30%;
-        margin-bottom:13%;
+        margin-top:20vmax;
+        margin-bottom:10rem;
         align-items:center;
         justify-content: center;
 
+    }
+    @media (min-width:30rem){
+        .centerPiece{
+            padding-top:6rem;
+        }
     }
     
     tagline{
         position:flex;
         align-items:center;
         font-family:monospace;
-        margin-left: 15%;
+        margin-left: 10%;
         font-size: xxx-large;
-        text-align:justify;
+        text-align:left;
         justify-content:center;
-        margin-inline: auto;
         width: min(95%, 70.5rem);
         max-width: fit-content;
 
@@ -194,10 +244,9 @@
         display: flex;
         align-items: left;
         margin-left:12%;
-        font-size: xxx-large;
+        font-size: 4vmax;
         font-family: monospace;
         background-color: #e1e1e6;
-
         max-width: 100%;
     }
 
@@ -205,9 +254,9 @@
         display: flex;
         align-items: center;
         justify-content: left;
-        padding-left: 35%;
+        padding-left: 30%;
         margin-top: 2%;
-        text-align: justify;
+        text-align: left;
         font-family: monospace;
         font-size:large;
         background-color: #e1e1e6;
@@ -225,7 +274,7 @@
         display: flex;
         align-items: left;
         margin-left:12%;
-        font-size: xxx-large;
+        font-size: 4vmax;
         font-family: monospace;
     }
     
@@ -254,9 +303,11 @@
 
     .contact{
         text-align: center;
+        border-top:solid black;
         justify-content: center;
         justify-items: center;
         margin-top: 30%;
+        padding-top:7%;
         margin-bottom: 10%;
         align-items: center;
         justify-content: center;
@@ -269,14 +320,14 @@
         align-items: left;
         margin-left:12%;
         margin-bottom:5%;
-        font-size: xxx-large;
+        font-size: 4.2vmax;
         font-family: monospace;
 
 
                 
     }
     .email{
-        font-size: x-large;
+        font-size: clamp(18px, 0.5vw, 30px);
         text-align: center;
         margin-top: 20%;
         padding-bottom:20;
@@ -292,27 +343,7 @@
         left:0;
         right:0;
         display: flex;
-        width:100%;
+
         border-top: 2px solid black;
     }
 
-    /* For desktop: */
-.col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
-
-@media only screen and (max-width: 768px) {
-  /* For mobile phones: */
-  [class*="col-"] {
-    width: 100%;
-  }
-}
