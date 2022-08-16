@@ -1,32 +1,187 @@
+html{
+    margin:0;
+}
+.pageContainer{
+    display:flex;
+    flex-direction:column;
+    margin:0;
+}
+
+body{
+    margin:0;
+}
+
 header{
-    width:100%;
+    left:0;
+    right:0;
+    background-color: white;
+    position:fixed;
+    top:0;
+    margin:0;
+}
+.headerContainer{
+    
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
     border-bottom: 2px solid black;
+    max-height:65px;
 }
 
 welcome{
     display: flex;
-    flex-grow: 1;
-    justify-items: center;
-    align-items: center;
-    align-content: center;
+    align-items:center;
+    justify-content: flex-start;
     font-family: monospace;
-    font-size: xx-large;
-    padding-top:1%;
+    font-size: clamp(12px, 3vmax, 25px);
+    padding: 2%;
+    margin-right:auto;
 
 }
 socialIcon {
     display:flex;
+    justify-content: flex-end;
+    align-content: center;
+    align-items: right;
+    display:flex;
     gap: 10%;
+    align-items: right;
+}
+@media screen and (max-width:400px) {
+    socialIcon{
+        display:none;
+    }
 }
 icons{
     display:flex;
     align-items: center;
-    justify-content: right;
     margin: 1%;
     gap: 2%;
+    margin-right:5%;
+    margin-left:1%;
+}
+.hamburger-nav{
+    display:none;
+}
+.hamburger-nav:checked ~ mobileNav {
+    display:block;
+    margin-left: 4%;
+    margin-right: 5%; 
+}
+@media screen and (min-width: 600px){
+    .hamburger-nav, .hamburgerIcon {
+        display: none;
+    }
+}
+.Navlist{
+    list-style:none;
+    font-size: 6vmin;
+    font-family:monospace;
+}
+li{margin:20px;}
+mobileNav{
+    position: absolute;
+    text-align: left;
+    align-content:center;
+    align-items: center;
+    top:100%;
+    right:0;
+    width:50%;
+    display: none;
+    background-color: black;
+    color: white;
+    border: solid black;
+
+}
+@media screen and (max-width: 600px){
+    mobileNav {
+        display: none;
+    }
 }
 
-a1{
-    color:black;
+/* this is the css for the social media icons */
+.fa {
+cursor:pointer;
+text-decoration: none;
+margin: 5px;
+}
+.fa:hover{
+opacity: 0.8;
+}
+
+.fa-github {
+background: black;
+color: white;
+border-radius:50%;
+padding: 10px;
+}
+.fa-linkedin {
+background: black;
+color: white;
+border-radius: 50%;
+padding: 10px;
+}
+
+.fa-soundcloud {
+background: black;
+color: white;
+border-radius: 50%; 
+padding-top: 10px;
+padding-bottom:10px;
+padding-left: 7px;
+padding-right: 7px;
+}
+
+
+
+navbar{
+    display:flex;
+
+    background-color:white;
+    align-items: center;
+    justify-content: center;
+
+}
+/* this hides the primary navbar at small screens and makes way for hamburger menu */
+@media screen and (max-width: 600px){
+    navbar {
+        display: none;
+    }
+}
+
+.navcontent { display:flex;
+        margin: 5%;
+        gap: 7%;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        font-family: monospace;
+    
+    }
+
+.navItems{display:flex; 
+    background-color: black;
+    border-radius: 15px;
+    font-size: xx-large;
+    color: white;
+    padding:10px;
+    align-items: center;
+    text-align:center;
+    justify-content: center;
     cursor: pointer;
+}
+
+.navItems:hover{
+    opacity: 0.7;
+}
+
+    /* this is for all other links/buttons */
+    a{
+        color: white;
+        text-decoration: none;
+    }
+    
+
+h1 {
+    color:red;
 }

@@ -1,3 +1,15 @@
+    html{
+        margin:0;
+    }
+    .pageContainer{
+        display:flex;
+        flex-direction:column;
+        margin:0;
+    }
+    
+    body{
+        margin:0;
+    }
 
     header{
         left:0;
@@ -5,15 +17,15 @@
         background-color: white;
         position:fixed;
         top:0;
-
-
+        margin:0;
     }
-    .links{
-        margin-inline: auto;
-
+    .headerContainer{
+        
         display:flex;
         justify-content:flex-end;
+        align-items:center;
         border-bottom: 2px solid black;
+        max-height:65px;
     }
     
     welcome{
@@ -21,7 +33,7 @@
         align-items:center;
         justify-content: flex-start;
         font-family: monospace;
-        font-size: 2.5vmax;
+        font-size: clamp(12px, 3vmax, 25px);
         padding: 2%;
         margin-right:auto;
     
@@ -35,6 +47,11 @@
         gap: 10%;
         align-items: right;
     }
+    @media screen and (max-width:400px) {
+        socialIcon{
+            display:none;
+        }
+    }
     icons{
         display:flex;
         align-items: center;
@@ -42,20 +59,16 @@
         gap: 2%;
         margin-right:5%;
         margin-left:1%;
-
     }
-
-
     .hamburger-nav{
         display:none;
     }
-
     .hamburger-nav:checked ~ mobileNav {
         display:block;
         margin-left: 4%;
         margin-right: 5%; 
     }
-    @media screen and (min-width: 560px){
+    @media screen and (min-width: 600px){
         .hamburger-nav, .hamburgerIcon {
             display: none;
         }
@@ -80,7 +93,7 @@
         border: solid black;
 
     }
-    @media screen and (min-width: 560px){
+    @media screen and (max-width: 600px){
         mobileNav {
             display: none;
         }
@@ -129,8 +142,8 @@
         justify-content: center;
 
     }
-
-    @media screen and (max-width: 560px){
+/* this hides the primary navbar at small screens and makes way for hamburger menu */
+    @media screen and (max-width: 600px){
         navbar {
             display: none;
         }
@@ -161,7 +174,8 @@
     .navItems:hover{
         opacity: 0.7;
     }
-    
+
+    /* this is for all other links/buttons */
     a{
         color: white;
         text-decoration: none;
@@ -239,12 +253,12 @@
         border-top: 2px solid black;
         margin-inline: auto;
     }
-
+    /* css for the 'about me' section */
     AboutTitle{
         display: flex;
         align-items: left;
         margin-left:12%;
-        font-size: 4vmax;
+        font-size: 3vmax;
         font-family: monospace;
         background-color: #e1e1e6;
         max-width: 100%;
@@ -264,41 +278,41 @@
         max-width: 100%;
 
     }
-
+    /* css for 'my projects' section */
     .portfolioContainer{
         margin-top:5%;
-        
-        
     }
     WorkTitle{
         display: flex;
         align-items: left;
         margin-left:12%;
-        font-size: 4vmax;
+        font-size: 3vmax;
         font-family: monospace;
     }
+
+
     
-    grid{
-        
-        display:grid;
-        grid-template-columns: auto auto;
-        grid-template-rows: 50px 50px;
-        background-color: #2196F3;
-        gap:10%;
-        padding: 10%;
-        margin-inline: auto;
-        max-width: 100%;
+    .thumbnailGrid{
+        display:flex;
+        flex-direction: column;
+        justify-content:center;
+    }
+    .project{
+        display:flex;
+        border:solid black;
+        align-items:center;
+        justify-content:center;
+        margin:12%;
+        height: 60vw;
+        max-height: 50vw;
     }
 
-    gridItem{
-
-
-        max-width: 100%;
-        background-color: rgba(255, 255, 255, 0.8);
-        border: 1px solid rgba(0, 0, 0, 0.8);
-        padding: 20px;
-        font-size: 30px;
-        text-align: center;
+    @media screen and (min-width:800px){
+        .thumbnailGrid{
+            display:flex;
+            flex-flow: row wrap;
+            width:20%;
+        }
     }
 
     .contact{
@@ -320,7 +334,7 @@
         align-items: left;
         margin-left:12%;
         margin-bottom:5%;
-        font-size: 4.2vmax;
+        font-size: 3.2vmax;
         font-family: monospace;
 
 
@@ -343,7 +357,9 @@
         left:0;
         right:0;
         display: flex;
-
+        align-items: center;
+        font-size: clamp(12px, 3vmax, 25px);
         border-top: 2px solid black;
+        max-height:65px;
     }
 

@@ -4,28 +4,56 @@
     <head>
         <meta charset="UTF-8" />
         <link rel="stylesheet" href="../css/cvstyle.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
     </head>
 
-    <header>
-        <welcome><a1 href="home.html">Hello_world</a1></welcome>
-        <icons>
-            <socialIcon>Github icon</socialIcon>
-            <socialIcon>LinkedIn icon</socialIcon>
-            <socialIcon>Soundcloud</socialIcon>
-        </icons>
-    </header>
+<div class="pageContainer">
+        <header>
+            <div class="headerContainer">
+                    <welcome><a href="Index.html" style="color:black;">Hello_world()</a></welcome>
+                    <icons>    
+                        <socialIcon><a class="fa fa-github" href ="https://github.com/seanlb02" target= "_blank"></a></socialIcon>
+                        <socialIcon><a class="fa fa-linkedin" href="https://www.linkedin.com/in/sean-gyuris-72b5a1127/ "target= "_blank"></a></socialIcon>
+                        <socialIcon><a class="fa fa-soundcloud" href="https://soundcloud.com/cult-trip-records"target= "_blank"></a></socialIcon>
+                        <!-- this is for the 'hamburger' nav icon for mobile devices -->
+                        <input type="checkbox" id="hamburger-nav" class="hamburger-nav">
+                        <mobileNav>
+                            <ul class="Navlist">
+                                <li><a href="cv.html">Resume</a></li>
+                                <li><a href="#Portfolio">Portfolio</a></li>
+                                <li><a href="#contact">Contact</a></li>
+                                <li><a href="bloglist.html">Blog</a></li>
+                            </ul>
+                        </mobileNav>
+                        <!-- this span is the actual hamburger icon -->
+                        <label for="hamburger-nav" class="hamburgerIcon">
+                            <i class="fa fa-solid fa-bars fa-lg"></i> 
+                        </label>
+                    </icons>
+            </div class="links">
+            <navbar>
+                    <!-- refer to readme: mozzilla needs <a tag> as well as name=""-->
+                    <div class= "navcontent">
+                        <div class="navItems"> <a href="cv.html">Resume</a></div>
+                        <div class="navItems"> <a href="#Portfolio">Portfolio</a></div>
+                        <div class="navItems"> <a href="#contact">Contact</a></div>
+                        <div class="navItems"> <a href="bloglist.html">Blog</a></div>
+                    </div class= "navcontent">
+            </navbar>
+       </header>
+       
+       <body>
+            <div class="downloadButton">Download</div>
+            <article>
+                <h1>Sean Gyuris</h1>
+            </article>
 
-    <body>
-
-        
 
 
 
 
-
-
-    </body>
-    
+       </body>
 
 
 
@@ -34,11 +62,6 @@
 
 
 
-
-
-
-
-
-
+</div>
 
 </html>
