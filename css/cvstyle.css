@@ -2,8 +2,7 @@ html{
     margin:0;
 }
 .pageContainer{
-    display:flex;
-    flex-direction:column;
+
     margin:0;
 }
 
@@ -181,7 +180,68 @@ navbar{
         text-decoration: none;
     }
     
+    body{
+ 
+        margin-top: clamp(24vw, 20vw, 1%);
+        height:100%;
+        border: solid brown
+    }
+
+    /* section{
+        display:flex;
+        flex-direction:column;
+        border:solid blue;
+    } */
 
 h1 {
-    color:red;
+    text-align:center;
+    color:black;
+    font-family: monospace;
+    font-size: clamp(20px, 5vw, 5vw);
+    margin:0;
+
 }
+
+p {
+    padding:1%;
+    border:solid black;
+    text-align:left;
+    margin: 1%;
+
+}
+
+article{
+    align-items: center;
+    border:solid black;
+    margin-right:10%;
+    margin-left:10%;
+}
+
+.content{
+    display:flex;
+    justify-content:center;
+    flex-direction:column;
+    border:solid yellow;
+    margin-right:5%;
+    margin-left:15%;
+}
+
+.testContainer{
+    display:flex;
+    justify-content:flex-end;
+}
+
+.downloadButton{
+    display:inline-flex;
+    margin-top:2%;
+    justify-content:center;
+    align-items:center;
+    background-color:black;
+    border:solid black;
+    border-radius:15%;
+    color:white;
+    margin:3%;
+    padding:1%;
+    font-family:monospace;
+}
+
