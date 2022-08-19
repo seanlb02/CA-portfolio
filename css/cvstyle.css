@@ -135,7 +135,7 @@ padding-right: 7px;
 
 navbar{
     display:flex;
-
+    border-bottom: 2px solid black;
     background-color:white;
     align-items: center;
     justify-content: center;
@@ -149,7 +149,7 @@ navbar{
 }
 
 .navcontent { display:flex;
-        margin: 5%;
+        margin: 4%;
         gap: 7%;
         text-align: center;
         align-items: center;
@@ -182,9 +182,10 @@ navbar{
     
     body{
  
-        margin-top: clamp(24vw, 20vw, 1%);
+        margin-top: clamp(23vw, 15vw, 1%);
         height:100%;
-        border: solid brown
+        border: solid brown;
+        margin-bottom:15%;
     }
 
     /* section{
@@ -209,12 +210,15 @@ p {
     margin: 1%;
 
 }
-
+.CVcontainer{
+    display:inline-block;
+}
 article{
     align-items: center;
     border:solid black;
     margin-right:10%;
     margin-left:10%;
+    margin-top:-5%;
 }
 
 .content{
@@ -229,18 +233,21 @@ article{
 .testContainer{
     display:flex;
     justify-content:flex-end;
+    margin:0;
+    height:20%;
 }
 
 .downloadButton{
     display:inline-flex;
-    margin-top:2%;
+    margin-left:5%;
+    margin-right:5%;
+    margin-top:5%;
     justify-content:center;
     align-items:center;
     background-color:black;
     border:solid black;
-    border-radius:15%;
+    border-radius:15px;
     color:white;
-    margin:3%;
     padding:1%;
     font-family:monospace;
 }

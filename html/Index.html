@@ -47,66 +47,99 @@
    </header> 
    
    <body>
-        <div class="bodyContainer">
-            <div class="centerPiece">
+        <main class="bodyContainer">
+            <section class="centerPiece">
                 <tagline>
                     Lets build <span id="cycle"></span>
-                </tagline>
-                
-            </div>
-
-            <div class="aboutContainer">
-                    <AboutTitle>About me</AboutTitle>
-                    <AboutSection>Hi. My name is Sean Gyuris.
-                        <br>I am a full-stack developer with a background in HTML/CSS, ReactJS and Flask.
-                        
-                        <br>My projects [will] feature a range of functionalities not limited to: profile creation,
-                            payments integration (Stripe), paywalls and media players. 
-                    </AboutSection>
-
-            </div>
-
-            <div class="portfolioContainer" id="Portfolio">
-                    <WorkTitle>My projects</WorkTitle>
-                    <div class="thumbnailGrid">
-                        <div class="project">
-                            <img src="/Assets/mobile.svg" class="screenShot">
-                            <div class="screenshotButtonContainer">
-                                <div class="screenshotButton">Live</div>
-                                <div class="screenshotButton">Code</div>
-                            </div>
-                        </div>    
-                        <div class="project">
-                            <img src="/Assets/mobile.svg" class="screenShot">
-                            <div class="screenshotButtonContainer">
-                                <div class="screenshotButton">Live</div>
-                                <div class="screenshotButton">Code</div>
-                            </div>
-                        </div>
-                        <div class="project">
-                            <img src="/Assets/mobile.svg" class="screenShot">
-                            <div class="screenshotButtonContainer">
-                                <div class="screenshotButton">Live</div>
-                                <div class="screenshotButton">Code</div>
-                            </div>
-                        </div>
-                        <div class="project">
-                            <img src="/Assets/mobile.svg" class="screenShot">
-                            <div class="screenshotButtonContainer">
-                                <div class="screenshotButton">Live</div>
-                                <div class="screenshotButton">Code</div>
-                            </div>
-                        </div>
-                        
-                    </div>
-            </div>
+                </tagline>       
+            </section>
             
-            <!-- refer to readme: both id&name are needed for mozilla&chrome -->
-            <div id="contact" class="contact">
-                    <contactTitle>All enquiries</contactTitle>
-                    <a class="email" href = "mailto: 12708@coderacademy.edu.au">12708@coderacademy.edu.au</a>
-            </div>
-        </div>
+                <section class="aboutContainer">
+                        <AboutTitle>About me</AboutTitle>
+                        <AboutSection>
+                            <p>Hi. My name is Sean Gyuris.
+                            <br>
+                            <br>
+                            I am a full-stack developer that builds with HTML/CSS, ReactJS and Flask.
+                            <br>
+                            <br>My past projects [will] feature a range of functionalities not limited to: profile creation,
+                                payments integration (Stripe), paywalls and media players. 
+                            <br>
+                            <br>
+                            I [will] take pride in writing clean code using an agile approach both collaboratively or solo.
+                            </p>
+                        </AboutSection>
+                </section>
+
+                <section class="stackContainer">
+                    <StackTitle>My Stack</StackTitle>
+                    <Section class="stackGrid">
+                        <div id= "thumbnail" class="htmlThumb">hi</div>
+                        <div id= "thumbnail" class="cssThumb"></div>
+                        <div id= "thumbnail" class="reactThumb"></div>
+                        <div id= "thumbnail" class="nextThumb"></div>
+                        <div id= "thumbnail" class="pythonThumb"></div>
+                        <div id= "thumbnail" class="flaskThumb"></div>
+                        <div id= "thumbnail" class="postThumb"></div>
+                    </Section>
+
+            </section>
+
+
+                    <section class="portfolioContainer" id="Portfolio">
+                        <WorkTitle>My projects</WorkTitle>
+                        <div class="thumbnailGrid">
+
+                            <section class="project">
+                                <figure class="sample">
+                                    <img src="/Assets/spotifyscreenshot.svg" class="screenShot">
+                                    <div class="screenshotButtonOverlay">
+                                        <div class="screenshotButton">Live</div>
+                                        <div class="screenshotButton">Code</div>
+                                    </div>
+                                    
+                                </figure>
+                                <figcaption class="description">
+                                    <h3>Project 1</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo corrupti est alias, quos nam molestiae dicta. Praesentium ea eligendi rerum?</p>
+                                </figcaption>
+                            </section>
+                            <section class="project2">
+                                <figure class="sample">
+                                    <img src="/Assets/discordscreenshot.svg" class="screenShot">
+                                    <div class="screenshotButtonOverlay">
+                                        <div class="screenshotButton">Live</div>
+                                        <div class="screenshotButton">Code</div>
+                                    </div>
+                                </figure>
+                                <figcaption class="descriptionReverse">
+                                    <h3>Project 2</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur ex fugit natus itaque eaque provident blanditiis tempore reiciendis voluptatem soluta.</p>
+                                </figcaption>
+                            </section>
+                            <section class="project">
+                                <figure class="sample">
+                                    <img src="/Assets/githubscreenshot.svg" class="screenShot">
+                                    <div class="screenshotButtonOverlay">
+                                        <div class="screenshotButton">Live</div>
+                                        <div class="screenshotButton">Code</div>
+                                    </div>
+                                </figure>
+                                <figcaption class="description">
+                                    <h3>Project 3</h3>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla odio, adipisci eum illum totam repudiandae quis officiis perspiciatis dolorem voluptatum?</p>
+                                </figcaption>
+                            </section>
+                        </div>
+                    </section>
+                
+                <!-- refer to readme: both id&name are needed for mozilla&chrome -->
+                <div id="contact" class="contact">
+                        <contactTitle>All enquiries</contactTitle>
+                        <a class="email" href = "mailto: 12708@coderacademy.edu.au">12708@coderacademy.edu.au</a>
+                </div>
+        </main>
+        
     </body>
 
     <footer>

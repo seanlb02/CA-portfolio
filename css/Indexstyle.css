@@ -5,13 +5,16 @@
         display:flex;
         flex-direction:column;
         margin:0;
+
     }
     
-    body{
+    *{
         margin:0;
+        box-sizing:border-box;
     }
 
     header{
+        z-index:2;
         left:0;
         right:0;
         background-color: white;
@@ -133,13 +136,14 @@
 }
 
 
-
+/* this is for the primary navbar */
     navbar{
         display:flex;
 
         background-color:white;
         align-items: center;
         justify-content: center;
+        border-bottom: 2px solid black;
 
     }
 /* this hides the primary navbar at small screens and makes way for hamburger menu */
@@ -150,13 +154,13 @@
     }
 
 .navcontent { display:flex;
-            margin: 5%;
+            margin: 4%;
             gap: 7%;
             text-align: center;
             align-items: center;
             justify-content: center;
             font-family: monospace;
-        
+            
         }
 
     .navItems{display:flex; 
@@ -184,20 +188,26 @@
     /* this css is for the 'centerpiece 'let's build' animated tagline */
     .centerPiece{
         display:flex;
+        flex:100%;
         margin-top:20vmax;
         margin-bottom:10rem;
         align-items:center;
         justify-content: center;
-
+      
     }
+
+
+    /* this creates responsive top padding at small screens */
     @media (min-width:30rem){
         .centerPiece{
             padding-top:6rem;
+           
         }
     }
     
     tagline{
-        position:flex;
+        color:black;
+        
         align-items:center;
         font-family:monospace;
         margin-left: 10%;
@@ -208,6 +218,18 @@
         max-width: fit-content;
 
     }
+    /* this centers the centerpiece tagline on small phones */
+    @media screen and (min-width: 430px){
+        .tagline{
+            text-align:center;
+            margin:0;
+        }
+    }
+    .cycle{
+        display:inline-block;
+        line-height:1;
+    }
+
     /* this is the animation css for the text reel */
     #cycle:after {
         animation-name: cycle; 
@@ -236,16 +258,13 @@
           content: "things."
       }
     }
-        
+
     .aboutContainer{
-        box-shadow: inset 0px 3px 3px -1px
-                    rgba(207, 194, 194, 0.75);
         background-color: #e1e1e6;
         padding-top:5%;
         padding-bottom:10%;
         padding-right:6%;
         width: auto;
-        border-bottom: 2px solid black;
         border-top: 2px solid black;
         margin-inline: auto;
     }
@@ -254,7 +273,7 @@
         display: flex;
         align-items: left;
         margin-left:12%;
-        font-size: 3vmax;
+        font-size: clamp(24px,3vmax, 2.5vmax);
         font-family: monospace;
         background-color: #e1e1e6;
         max-width: 100%;
@@ -272,75 +291,173 @@
         background-color: #e1e1e6;
         margin-inline: auto;
         max-width: 100%;
-
     }
+
+        .stackContainer{
+            
+            background-color: white;
+            padding-top:5%;
+            padding-bottom:10%;
+            padding-right:6%;
+            width: auto;
+
+            border-top: 2px solid black;
+            margin-inline: auto;
+        }
+
+        StackTitle{
+            display: flex;
+            align-items: left;
+            margin-left:12%;
+            font-size: clamp(24px,3vmax, 2.5vmax);
+            font-family: monospace;
+            background-color: white;
+            max-width: 100%;
+        }
+
+        .stackGrid{
+
+            display:hidden;
+            height: 20%;
+           margin:5%;
+           margin-top:2%;
+            flex-grow:1;
+            justify-content:center;
+        }
+
+        #thumbnail{
+            border:solid black;
+            border-radius:50%;
+        }
+
+        .htmlThumb{
+            height:200px;
+            width:200px;
+        }
+
+
     /* css for 'my projects' section */
     .portfolioContainer{
         margin-top:5%;
+        background-color:rgb(21, 15, 48);
     }
     WorkTitle{
+        background-color:rgb(21, 15, 48);
         display: flex;
         align-items: left;
         margin-left:12%;
-        font-size: 3vmax;
+        font-size: clamp(24px,3vmax, 2.5vmax);
         font-family: monospace;
+        color:white;
     }
 
 
     
     .thumbnailGrid{
-        border: solid black;
+        background-color:rgb(21, 15, 48);
         display:flex;
         flex-direction:column;
         justify-content:center;
+        row-gap:10%;
         /* align-items:center; */
-        margin-top:5%;
+        margin-top:3%;
         /* border:solid black; */
     }
+
     .project{
-        border:solid 1px black;
-        align-items:center;
-        justify-content:center;
+        flex:1;
+        display:flex;
+        flex-direction:column;
         align-self:center;
+
+    }
+
+    .project2{
+           
+        display:flex;
+        flex-direction:column;
+        flex:1;
+       margin-right:0%;
+       
+    }
+
+    .description{
+     display:flex;
+     flex-direction:column;
+     text-align: justify;
+     font-size: clamp(0.8rem, 0.5vw,1rem);
+     margin-left:10%;
+     margin-right:10%;
+     margin-bottom:10%;
+     color:white;
+     font-family:monospace
+    }
+
+    .descriptionReverse{
+        display:flex;
+     flex-direction:column;
+     text-align: justify;
+     font-size: clamp(0.8rem, 0.5vw,1rem);
+     margin-left:10%;
+     margin-right:10%;
+     margin-bottom:10%;
+      color:white;
+     font-family:monospace;
+    }
+
+    .sample{
+        
+        /* box-shadow: 2px 2px 4px rgb(214, 213, 213); */
+        display:flex;
+        flex-direction:column;
+        justify-self:center;
+        align-self:center;
+        flex:100%;
         max-height:50vw;
         max-width: 80vw;
-        margin:2%;
-        margin-bottom:7%;
+        margin:25px;
+        /* margin-bottom:7%; */
         text-align: center;
-        min-width:0;
+     
     }
 
-    .project:nth-of-type(1){
-        background: url(/Assets/mobile.svg/200) center no-repeat;
-        background-size: inherit;
-    }
 
     .screenShot{
-        width:100%;
-        height:85%;
-        /* border:solid red; */
+       
+        display:flex;
+        min-height:100%;
+        /* max-width:100%;
+        max-height:100%;
+        max-width:100%;
+        max-height:100%; */
+        object-fit:contain; 
+        
     }
 
-    .screenshotButtonContainer{
+    .screenshotButtonOverlay{
 
-        border: solid 1px black;
+        overflow:hidden;
+        font-style:white;
         display:flex;
-        width:auto;
-        justify-content:center;
-        align-items:center;
-        gap:30%;
+        width:100%;
+        margin-right:3%;
+        height:auto;
+        justify-content:right;
+        gap:5%;
+        background-color:rgba(230, 174, 174, 0.75);
+        opacity:0.9;
     }
 
     .screenshotButton{
 
-        background:black;
+        /* background:black; */
         padding-top:2px;
         padding-bottom:2px;
         border-radius:10%;
-        color:white;
+        color:black;
         font-family: monospace;
         margin-top:2%;
-        margin-bottom:5%;
+        margin-bottom:3%;
         cursor:pointer;
         font-size: 1rem;
         padding-left:3px;
@@ -350,14 +467,80 @@
     @media screen and (min-width:600px){
         .thumbnailGrid{
             display:flex;
-            flex-flow: row wrap;
+            flex-direction:column;
             justify-content:center;
-            
         }
         .project{
+            display:flex;
+            flex-direction:row;
+            flex:1;
+            visibility:visible;
+           margin-bottom:5%;
+           margin-top:3%;
+            flex:100%;
+            gap:0;
+        }
+        .project2{
+           
+            display:flex;
+            flex-direction:row-reverse;
+            flex:100%;
+           margin-right:7%;
+           gap:0;
+           
+        }
+
+        .description{
+            display:flex;
+            flex:1;
+            flex-direction:column;
+            justify-items:center;
+            font-size: clamp(0.8rem,1rem, 1.1rem);
+            margin-top:5%;
+            margin-left:5%;
+            margin-right:5%;
+            font-size:1rem;
+            flex:stretch;
+        }
+        .descriptionReverse{
+            display:flex;
+            flex:1;
+            flex-direction:column;
+            flex:100%;
+            justify-items:center;
+            margin-top:5%;
+            font-size: clamp(0.8rem,1rem, 1.1rem);
+            margin-left:10%;
+        }
+        .sample{
             max-height:25vw;
             max-width: 40vw;
             align-self: initial;
+            /* display:flex;
+            flex-direction:column; */
+            margin-left:10%;
+        }
+
+        .sample:hover  .screenshotButtonOverlay{
+            display:flex;
+            cursor:pointer;
+            justify-content:center;
+            align-items:center;
+            min-height:100%;
+            gap:12%;
+            transform:translateY(-100%);
+            background-color: rgba(233, 207, 207, 0.75);
+         
+            opacity:0.95;
+        
+        }
+        .screenshotButton{
+            color:black;
+
+        }
+
+        .screenshotButtonOverlay{
+            display:none;
         }
 
     }
@@ -367,7 +550,7 @@
         border-top:solid black;
         justify-content: center;
         justify-items: center;
-        margin-top: 30%;
+        margin-top: 10%;
         padding-top:7%;
         margin-bottom: 10%;
         align-items: center;
@@ -381,7 +564,7 @@
         align-items: left;
         margin-left:12%;
         margin-bottom:5%;
-        font-size: 3.2vmax;
+        font-size: clamp(24px,3vmax, 2.5vmax);
         font-family: monospace;
 
 
@@ -401,6 +584,7 @@
     }
 
     footer{
+       
         left:0;
         right:0;
         display: flex;
