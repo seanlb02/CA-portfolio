@@ -184,7 +184,7 @@ navbar{
  
         margin-top: clamp(23vw, 15vw, 1%);
         height:100%;
-        border: solid brown;
+
         margin-bottom:15%;
     }
 
@@ -205,29 +205,41 @@ h1 {
 
 p {
     padding:1%;
-    border:solid black;
-    text-align:left;
+    font-size: clamp(1rem, 0.5vw,1rem);
+    text-align:justify;
     margin: 1%;
 
 }
 .CVcontainer{
     display:inline-block;
+
+
 }
 article{
     align-items: center;
-    border:solid black;
-    margin-right:10%;
-    margin-left:10%;
-    margin-top:-5%;
+
+    margin-right:15%;
+    margin-left:15%;
+
+
 }
 
+h3{
+    text-align: left;
+    margin: top 2px;
+}
+
+strong{
+    text-align: left;;
+}
 .content{
     display:flex;
     justify-content:center;
     flex-direction:column;
-    border:solid yellow;
+
     margin-right:5%;
     margin-left:15%;
+    margin-bottom:5%;
 }
 
 .testContainer{
@@ -238,6 +250,7 @@ article{
 }
 
 .downloadButton{
+
     display:inline-flex;
     margin-left:5%;
     margin-right:5%;
@@ -245,10 +258,9 @@ article{
     justify-content:center;
     align-items:center;
     background-color:black;
-    border:solid black;
     border-radius:15px;
     color:white;
-    padding:1%;
+    padding:2%;
     font-family:monospace;
 }
 

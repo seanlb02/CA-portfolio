@@ -1,0 +1,115 @@
+html{
+    display:flex;
+    flex-direction:column;
+}
+
+.bloglistContainer{
+    display:flex;
+    flex-direction:column;
+    height:100%;
+    margin-top:20%;
+    overflow-y: auto;
+
+}
+
+.blogs{
+    margin-top:5%;
+    flex:4;
+    font-family:monospace;
+    
+    text-align:justify;
+    margin-left:10%;
+    margin-right:10%;
+}
+
+.header{
+    font-size: clamp(1rem, 3rem, 5rem);
+    margin-bottom:10%;
+    font-family:monospace;
+    text-decoration: none;
+}
+
+@keyframes blink {
+    0% {visibility:visible}
+    25%{visibility:hidden}
+    50%{visibility:visible}
+    75%{visibility:hidden}
+    100% {visibility:hidden}
+}
+
+.blinkingCursor{
+    visibility:visible;
+    animation-name: blink;
+    animation-duration:1.5s;
+    animation-iteration-count:infinite;
+
+  
+}
+
+.preview{
+    margin:5%;
+    margin-bottom:8%;
+}
+
+#link{
+    color:black;
+}
+
+.blogThumbnail{
+    width:50vw;
+    height:30vw;
+    margin-bottom:3%;
+    margin: left 0%;
+}
+
+.sidebar{
+   overflow:auto;
+    flex:1;
+    margin-right:10%;
+    height:100%;
+}
+
+.back-to-top{
+    position:fixed;
+    bottom:30px;
+    background:black;
+    border-radius:15px;
+    color:white;
+    margin:5%;
+    padding:1%;
+    align-items:center;
+    font-family:monospace;
+}
+
+.blogTitle{
+    margin-bottom:3%;
+    font-size: clamp(0.5rem, 1.5rem, 2rem)
+
+}
+
+.blurb{
+    margin-bottom:8%;
+    margin-top:5%;
+    font-size: clamp(0.8rem, 0.5vw,1rem);
+
+}
+
+@media screen and (max-width: 725px){
+    .back-to-top{
+        display:none;
+    }
+
+    .sidebar{
+        display:none;
+    }
+    .blogs{
+        display:flex;
+        flex-direction:column;
+        float:right;
+
+    }
+    .blogThumbnail{
+        margin-left:15%;
+        justify-content: center;
+    }
+}
