@@ -4,6 +4,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"> 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
         <link rel="stylesheet" href="../css/Indexstyle.css">
         
@@ -14,7 +15,7 @@
 <div class="pageContainer">
     <header>
         <div class="headerContainer">
-                <welcome><a href="Index.html" style="color:black;"><strong>Hello</strong>_world()</a></welcome>
+                <p class="welcome"><a href="Index.html" style="color:black;"><strong>Hello</strong>_world()</a></p>
                 <icons>    
                     <socialIcon><a class="fa fa-github" href ="https://github.com/seanlb02" target= "_blank"></a></socialIcon>
                     <socialIcon><a class="fa fa-linkedin" href="https://www.linkedin.com/in/sean-gyuris-72b5a1127/ "target= "_blank"></a></socialIcon>
@@ -60,28 +61,32 @@
                             <p>Hi. My name is Sean Gyuris.
                             <br>
                             <br>
-                            I am a full-stack developer that builds with HTML/CSS, ReactJS and Flask.
+                            I am a junior full-stack developer that builds with HTML/CSS, ReactJS and Flask.
                             <br>
-                            <br>My past projects [will] feature a range of functionalities not limited to: profile creation,
+                            <br>My past projects <em>[will]</em> feature a range of functionalities not limited to: profile creation,
                                 payments integration (Stripe), paywalls and media players. 
                             <br>
                             <br>
-                            I [will] take pride in writing clean code using an agile approach both collaboratively or solo.
+                            I <em>[will]</em> take pride in writing clean code using an agile approach both collaboratively or solo.
                             </p>
                         </AboutSection>
                 </section>
 
                 <section class="stackContainer">
                     <StackTitle>My Stack</StackTitle>
-                    <Section class="stackGrid">
-                        <div id= "thumbnail" class="htmlThumb">hi</div>
-                        <div id= "thumbnail" class="cssThumb"></div>
-                        <div id= "thumbnail" class="reactThumb"></div>
-                        <div id= "thumbnail" class="nextThumb"></div>
-                        <div id= "thumbnail" class="pythonThumb"></div>
-                        <div id= "thumbnail" class="flaskThumb"></div>
-                        <div id= "thumbnail" class="postThumb"></div>
-                    </Section>
+                    <!-- this is for mobile -->
+                    <section class="stackColumn">
+                        <div id= "htmlThumb" class="thumbnail"></div>
+                        <div id= "cssThumb" class="thumbnail"></div>
+                        <div id= "tailwindThumb" class="thumbnail"></div>
+                        <div id= "reactThumb" class="thumbnail"></div>
+                        <div id= "nextThumb" class="thumbnail"></div>
+                        <div id= "nodeThumb" class="thumbnail"></div>
+                        <div id= "pythonThumb" class="thumbnail"></div>
+                        <div id= "flaskThumb" class="thumbnail"></div>
+                        <div id= "linuxThumb" class="thumbnail"></div>
+                        <div id= "postThumb" class="thumbnail"></div> 
+                    </section>
 
             </section>
 
@@ -143,12 +148,10 @@
     </body>
 
     <footer>
-                    <welcome>&#60;/Goodbye_world&#62;</welcome>
-                    <icons>
-                        <socialIcon><a class="fa fa-github" href ="https://github.com/seanlb02" target= "_blank"></a></socialIcon>
-                        <socialIcon><a class="fa fa-linkedin" href="https://www.linkedin.com/in/sean-gyuris-72b5a1127/ "target= "_blank"></a></socialIcon>
-                        <socialIcon><a class="fa fa-soundcloud" href="https://soundcloud.com/cult-trip-records"target= "_blank"></a></socialIcon>  
-                    </icons>
+                    <p class="welcome">&#60;/Goodbye_world&#62;</p>
+                    <copyright>
+                        <p>&copy; Sean Gyuris</p>
+                    </copyright>
 
 
     </footer>

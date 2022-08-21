@@ -31,7 +31,7 @@
         max-height:65px;
     }
     
-    welcome{
+    .welcome{
         display: flex;
         align-items:center;
         justify-content: flex-start;
@@ -297,17 +297,13 @@
             
             background-color: white;
             padding-top:5%;
-            padding-bottom:10%;
-            padding-right:6%;
-            width: auto;
-
+            /* padding-bottom:10%; */
             border-top: 2px solid black;
-            margin-inline: auto;
+           
         }
 
         StackTitle{
             display: flex;
-            align-items: left;
             margin-left:12%;
             font-size: clamp(24px,3vmax, 2.5vmax);
             font-family: monospace;
@@ -315,24 +311,66 @@
             max-width: 100%;
         }
 
-        .stackGrid{
+        .stackColumn{
 
-            display:hidden;
-            height: 20%;
-           margin:5%;
-           margin-top:2%;
-            flex-grow:1;
-            justify-content:center;
+            display:flex;
+            
+            flex-flow:row wrap;
+            flex:1;
+          
+            row-gap: 15px;
+            column-gap: 20px;
+            justify-content: center;
+            justify-items:center;
+            /* max-height:20%; */
+            margin:10%;
+
         }
 
-        #thumbnail{
-            border:solid black;
-            border-radius:50%;
+        .thumbnail{
+            display:flex;
+            flex:auto;
+            height:clamp(10vw,13vw,15vw);
+            width:clamp(10vw,13vw,15vw);
+            background-size:35vw contain;
+            background-repeat: no-repeat;
+           
         }
 
-        .htmlThumb{
-            height:200px;
-            width:200px;
+        #htmlThumb{
+            background-image:url("https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg");
+        }
+        #cssThumb{        
+            background-image:url("https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg");
+        }
+        #tailwindThumb{
+            background-image:url("https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg");
+        }
+        #reactThumb{
+            background-image:url("https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg");
+        }
+        #nextThumb{
+            background-image:url("https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original-wordmark.svg");
+
+        }
+        #nodeThumb{
+            background-image:url("https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg");
+ 
+        }
+        #pythonThumb{
+            background-image:url("https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg");
+        }
+
+        #flaskThumb{
+            background-image:url("https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original-wordmark.svg");
+
+        }
+        #linuxThumb{
+            background-image:url("https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg");
+        }
+        #postThumb{
+            background-image:url("https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg");
+
         }
 
 
@@ -346,6 +384,7 @@
         display: flex;
         align-items: left;
         margin-left:12%;
+        padding-top:5%;
         font-size: clamp(24px,3vmax, 2.5vmax);
         font-family: monospace;
         color:white;
@@ -361,6 +400,7 @@
         row-gap:10%;
         /* align-items:center; */
         margin-top:3%;
+        
         /* border:solid black; */
     }
 
@@ -377,7 +417,7 @@
         display:flex;
         flex-direction:column;
         flex:1;
-       margin-right:0%;
+    
        
     }
 
@@ -399,7 +439,6 @@
      text-align: justify;
      font-size: clamp(0.8rem, 0.5vw,1rem);
      margin-left:10%;
-     margin-right:10%;
      margin-bottom:10%;
       color:white;
      font-family:monospace;
@@ -547,11 +586,11 @@
 
     .contact{
         text-align: center;
-        border-top:solid black;
+      
         justify-content: center;
         justify-items: center;
         margin-top: 10%;
-        padding-top:7%;
+        
         margin-bottom: 10%;
         align-items: center;
         justify-content: center;
@@ -582,7 +621,13 @@
 
         max-width: 100%;
     }
-
+    copyright{
+        display:flex;
+        font-family:monospace;
+        font-size: clamp(0.5rem,0.8rem,1rem); 
+        padding-right:2%;
+        align-items:center;
+    }
     footer{
        
         left:0;
