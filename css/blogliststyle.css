@@ -3,22 +3,28 @@ html{
     flex-direction:column;
 }
 
+.Container{
+    display:flex;
+    flex-direction:row;
+}
+
 .bloglistContainer{
     display:flex;
     flex-direction:column;
     height:100%;
     margin-top:20%;
-    overflow-y: auto;
+  
 
 }
 
 .blogs{
+
     margin-top:5%;
-    flex:4;
+    flex:1;
     font-family:monospace;
     
     text-align:justify;
-    margin-left:10%;
+    margin-left:15%;
     margin-right:10%;
 }
 
@@ -47,8 +53,10 @@ html{
 }
 
 .preview{
-    margin:5%;
+    margin:0%;
+    width:100%;
     margin-bottom:8%;
+    border:solid yellow;
 }
 
 #link{
@@ -63,16 +71,18 @@ html{
 }
 
 .sidebar{
-   overflow:auto;
+    display:flex;
+
     flex:1;
     margin-right:10%;
     height:100%;
 }
 
 .back-to-top{
+    border:solid red;
     position:fixed;
     bottom:30px;
-    background:black;
+    background:red;
     border-radius:15px;
     color:white;
     margin:5%;

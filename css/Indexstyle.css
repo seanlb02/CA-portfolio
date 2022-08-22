@@ -55,6 +55,12 @@
         socialIcon{
             display:none;
         }
+        .hamburgerSocials{
+            display:flex;
+            justify-content:right;
+            float:right;
+          
+        }
     }
     icons{
         display:flex;
@@ -77,12 +83,20 @@
             display: none;
         }
     }
+
+    @media screen and (min-width: 400px){
+        .hamburgerSocials{
+            display:none;
+        }
+    }
     .Navlist{
         list-style:none;
         font-size: 6vmin;
         font-family:monospace;
     }
-    li{margin:20px;}
+    li{
+        margin:20px;
+        margin-left:0;}
     mobileNav{
         position: absolute;
         display:flex;
@@ -189,12 +203,15 @@
     
     /* this css is for the 'centerpiece 'let's build' animated tagline */
     .centerPiece{
+        z-index:0;
         display:flex;
         flex:100%;
-        margin-top:20vmax;
-        margin-bottom:10rem;
+        margin-top:5%;
+        margin-bottom:1%;
         align-items:center;
         justify-content: center;
+        overflow-y:hidden;
+     
       
     }
 
@@ -202,14 +219,14 @@
     /* this creates responsive top padding at small screens */
     @media (min-width:30rem){
         .centerPiece{
-            padding-top:6rem;
+            padding-top:7rem;
            
         }
     }
     
     tagline{
         color:black;
-        
+        flex:1;
         align-items:center;
         font-family:monospace;
         margin-left: 10%;
@@ -217,9 +234,79 @@
         text-align:left;
         justify-content:center;
         width: min(95%, 70.5rem);
-        max-width: fit-content;
+        /* max-width: fit-content; */
 
     }
+
+    .imageCircles {
+        display:flex;
+        flex:1;
+        border:solid yellow;
+        height: 50vw;
+        width:auto;
+
+    }
+
+    .image1{
+        
+        border-radius:50%;
+
+        position:relative;
+        height:20%;
+        width:100%;
+        background-repeat: no-repeat;
+        bottom:-10%;
+        left:30%;
+        background-image:url("/Assets/light.jpg");
+        background-size: cover;
+    }
+
+    .image2{
+
+        border-radius:50%;
+        display:flex;
+        position:relative;
+        height: 25%;
+        width: 150%;
+        background-repeat: no-repeat;
+        bottom:-30%;
+        left:30%;
+        background-image:url("/Assets/curvey.jpg");
+        background-size: cover;
+    }
+
+    .image3{
+       
+        border-radius:50%;
+        display:flex;
+        position:relative;
+        height: 40%;
+        width: 350%;
+        background-repeat: no-repeat;
+        bottom:-50%;
+        left:-30%;
+        background-image:url("/Assets/technicolorsmall.jpg");
+        background-size: cover;
+    }
+
+    .image4{
+       
+        border-radius:50%;
+
+        position:relative;
+        height:50%;
+        width:200%;
+        background-repeat: no-repeat;
+        bottom:-60%;
+        left:0%;
+        background-image:url("/Assets/technicolorsmall.jpg");
+        background-size: cover;
+        overflow: hidden;
+    }
+
+
+
+
     /* this centers the centerpiece tagline on small phones */
     @media screen and (min-width: 430px){
         .tagline{
@@ -262,6 +349,7 @@
     }
 
     .aboutContainer{
+        z-index:2;
         background-color: #e1e1e6;
         padding-top:5%;
         padding-bottom:10%;
@@ -438,9 +526,11 @@
     .descriptionReverse{
         display:flex;
      flex-direction:column;
+     justify-content:center;
      text-align: justify;
      font-size: clamp(0.8rem, 0.5vw,1rem);
      margin-left:10%;
+     margin-right:10%;
      margin-bottom:10%;
       color:white;
      font-family:monospace;
@@ -448,7 +538,6 @@
 
     .sample{
         
-        /* box-shadow: 2px 2px 4px rgb(214, 213, 213); */
         display:flex;
         flex-direction:column;
         justify-self:center;
@@ -548,10 +637,11 @@
             flex:1;
             flex-direction:column;
             flex:100%;
-            justify-items:center;
+            justify-content:center;
             margin-top:5%;
             font-size: clamp(0.8rem,1rem, 1.1rem);
             margin-left:10%;
+            margin-right:0%;
         }
         .sample{
             max-height:25vw;
@@ -631,11 +721,11 @@
         align-items:center;
     }
     footer{
-   
+       
         bottom:0;
         left:0;
         right:0;
-        width:100%;
+        width:100vw;
         display:flex;
         align-items: center;
         font-size: clamp(12px, 3vmax, 25px);

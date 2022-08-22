@@ -1,13 +1,18 @@
 html{
     margin:0;
+    
 }
-.pageContainer{
+.CVcontainer{
 
     margin:0;
 }
 
 body{
     margin:0;
+    border:solid yellow;
+    display:flex;
+    flex-direction: column;
+    height:100vh;
 }
 
 header{
@@ -179,20 +184,15 @@ navbar{
         color: white;
         text-decoration: none;
     }
-    
+/* this is to ensure content isnt hidden by navbar on tablets */
     body{
- 
         margin-top: clamp(23vw, 15vw, 1%);
         height:100%;
 
         margin-bottom:15%;
     }
 
-    /* section{
-        display:flex;
-        flex-direction:column;
-        border:solid blue;
-    } */
+
 
 h1 {
     text-align:center;
@@ -217,7 +217,7 @@ p {
 }
 article{
     align-items: center;
-
+    height:100vh;
     margin-right:15%;
     margin-left:15%;
 
