@@ -1,5 +1,6 @@
     html{
         margin:0;
+       
 
     }
     .pageContainer{
@@ -12,10 +13,11 @@
     *{
         margin:0;
         box-sizing:border-box;
+       
     }
 
     header{
-        z-index:2;
+        z-index:5;
         left:0;
         right:0;
         background-color: white;
@@ -203,29 +205,43 @@
     
     /* this css is for the 'centerpiece 'let's build' animated tagline */
     .centerPiece{
-        z-index:0;
+        position:relative;
         display:flex;
         flex:100%;
-        margin-top:5%;
-        margin-bottom:1%;
+       
+        margin-bottom:0%;
         align-items:center;
         justify-content: center;
-        overflow-y:hidden;
+ 
      
       
     }
 
 
     /* this creates responsive top padding at small screens */
-    @media (min-width:30rem){
+    @media (min-width:500px){
         .centerPiece{
-            padding-top:7rem;
-           
+            padding-top:10rem;
+
         }
     }
-    
+
+    @media screen and (min-width:1000px){
+        .imageCircles{
+            max-height:50vw;
+        }
+    }
+
+    @media screen and (max-width:600px){
+       .centerPiece{ 
+           padding-top:10rem;
+           padding-bottom:10rem;
+       }
+    }
+
     tagline{
         color:black;
+        z-index:3;
         flex:1;
         align-items:center;
         font-family:monospace;
@@ -234,78 +250,88 @@
         text-align:left;
         justify-content:center;
         width: min(95%, 70.5rem);
-        /* max-width: fit-content; */
 
     }
 
     .imageCircles {
+       position:relative;
+       padding-left:7%;
         display:flex;
         flex:1;
-        border:solid yellow;
-        height: 50vw;
-        width:auto;
-
+        /* border:solid yellow; */
+        height:50vw;
+        width:50vw;
+        overflow-y:hidden;
+        overflow-x:hidden;
+ 
     }
 
-    .image1{
-        
-        border-radius:50%;
+   
 
-        position:relative;
-        height:20%;
-        width:100%;
+    .image1{
+        border-radius:50%;
+        position:absolute;
+        height:30%;
+        width:30%;
         background-repeat: no-repeat;
-        bottom:-10%;
-        left:30%;
+        transform:translate(0%, 50%);
+        overflow-y:hidden;
+        overflow-x:visible;
         background-image:url("/Assets/light.jpg");
         background-size: cover;
     }
 
     .image2{
-
+      
         border-radius:50%;
         display:flex;
-        position:relative;
-        height: 25%;
-        width: 150%;
+        position:absolute;
+        height: 35%;
+        width: 35%;
         background-repeat: no-repeat;
-        bottom:-30%;
-        left:30%;
+        transform:translate(110%,80%);
         background-image:url("/Assets/curvey.jpg");
         background-size: cover;
+        overflow-y:hidden;
+        overflow-x:visible;
     }
 
     .image3{
        
         border-radius:50%;
         display:flex;
-        position:relative;
-        height: 40%;
-        width: 350%;
+        position:absolute;
+        height:50%;
+        width: 50%;
         background-repeat: no-repeat;
-        bottom:-50%;
-        left:-30%;
+        transform: translate(-10%,100%);
         background-image:url("/Assets/technicolorsmall.jpg");
         background-size: cover;
+        overflow-y:hidden;
+        overflow-x:visible;
     }
 
     .image4{
-       
+        display:flex;
+        position:absolute;
         border-radius:50%;
-
-        position:relative;
-        height:50%;
-        width:200%;
+        height:60%;
+        width:60%;
         background-repeat: no-repeat;
-        bottom:-60%;
-        left:0%;
+        transform:translate(90%,110%);
         background-image:url("/Assets/technicolorsmall.jpg");
         background-size: cover;
-        overflow: hidden;
+        overflow-y:hidden;
+        overflow-x:visible;
+  
     }
 
 
-
+    @media screen and (max-width:600px){
+        .imageCircles{
+            display:none;
+        }
+    }
 
     /* this centers the centerpiece tagline on small phones */
     @media screen and (min-width: 430px){
@@ -352,7 +378,7 @@
         z-index:2;
         background-color: #e1e1e6;
         padding-top:5%;
-        padding-bottom:10%;
+        padding-bottom:6%;
         padding-right:6%;
         width: auto;
         border-top: 2px solid black;

@@ -8,11 +8,12 @@ html{
 }
 
 body{
-    margin:0;
-    border:solid yellow;
-    display:flex;
-    flex-direction: column;
-    height:100vh;
+    position:absolute;
+
+    padding:0;
+
+
+    overflow: scroll;
 }
 
 header{
@@ -82,7 +83,9 @@ icons{
     font-size: 6vmin;
     font-family:monospace;
 }
+
 li{margin:20px;}
+
 mobileNav{
     position: absolute;
     text-align: left;
@@ -192,36 +195,33 @@ navbar{
         margin-bottom:15%;
     }
 
-
-
 h1 {
     text-align:center;
     color:black;
     font-family: monospace;
-    font-size: clamp(20px, 5vw, 5vw);
+    font-size: clamp(20px, 5vw, 8vw);
     margin:0;
-
 }
 
 p {
     padding:1%;
-    font-size: clamp(1rem, 0.5vw,1rem);
-    text-align:justify;
+    font-size: clamp(1rem, 0.5vw,1vw);
+    text-align:left;
     margin: 1%;
 
 }
 .CVcontainer{
     display:inline-block;
-
-
+    text-align:left;
 }
 article{
+    
     align-items: center;
-    height:100vh;
+    text-align:left;
+
     margin-right:15%;
     margin-left:15%;
-
-
+    margin-bottom:15%;
 }
 
 h3{
@@ -230,13 +230,12 @@ h3{
 }
 
 strong{
-    text-align: left;;
+    text-align: left;
 }
 .content{
     display:flex;
     justify-content:center;
     flex-direction:column;
-
     margin-right:5%;
     margin-left:15%;
     margin-bottom:5%;
@@ -250,7 +249,6 @@ strong{
 }
 
 .downloadButton{
-
     display:inline-flex;
     margin-left:5%;
     margin-right:5%;
@@ -260,7 +258,19 @@ strong{
     background-color:black;
     border-radius:15px;
     color:white;
-    padding:2%;
+    padding:1%;
     font-family:monospace;
 }
 
+@media screen and (max-width:200px){
+    h3, p{
+        text-align:left;
+    }
+}
+
+.footer{
+    position:block;
+    background-color: white;
+    margin:0;
+    font-size: clamp(12px, 3vmax, 25px);
+}

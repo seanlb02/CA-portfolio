@@ -3,6 +3,20 @@ html{
     flex-direction:column;
 }
 
+
+
+h1 {
+    text-align:left;
+    font-size:large;
+}
+
+@media screen and (max-width:600px){
+    .header{
+        font-size:clamp(20vw, 1rem, 1rem);
+        font-family: 'Times New Roman', Times, serif;
+    }
+}
+
 .Container{
     display:flex;
     flex-direction:row;
@@ -56,7 +70,7 @@ html{
     margin:0%;
     width:100%;
     margin-bottom:8%;
-    border:solid yellow;
+
 }
 
 #link{
@@ -69,6 +83,10 @@ html{
     margin-bottom:3%;
     margin: left 0%;
 }
+.text{
+    margin-left:5%;
+    margin-right:10%;
+}
 
 .sidebar{
     display:flex;
@@ -79,10 +97,11 @@ html{
 }
 
 .back-to-top{
-    border:solid red;
+    margin-top:50%;
+    margin-left:20%;
     position:fixed;
-    bottom:30px;
-    background:red;
+    /* bottom:20px; */
+    background:black;
     border-radius:15px;
     color:white;
     margin:5%;
@@ -122,4 +141,13 @@ html{
         margin-left:15%;
         justify-content: center;
     }
+}
+
+.footer{
+    display:block;
+    background-color: white;
+    margin:0;
+    font-size: clamp(12px, 3vmax, 25px);
+    overflow:hidden;
+    max-height:100px;
 }
