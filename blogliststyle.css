@@ -51,7 +51,7 @@ h1 {
 }
 
 .header{
-    font-size: clamp(1rem, 10vw, 15vw);
+    font-size: clamp(2rem, 3rem, 5vw);
     margin-bottom:10%;
     font-family:monospace;
     text-decoration: none;
