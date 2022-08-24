@@ -15,11 +15,21 @@
 <div class="pageContainer">
     <header>
         <div class="headerContainer">
-                <p class="welcome"><a href="Index.html" style="color:black;"><strong>Hello</strong>_world()</a></p>
+                <p class="welcome"><a href="index.html" style="color:black;"><strong>Hello</strong>_world()</a></p>
+                
+                    <!-- refer to readme: mozzilla needs <a tag> as well as name=""-->
+                    <nav class= "desktopNav">
+                        <div id="navItems"> <a href="cv.html" class="navLinks">Resume</a></div>
+                        <div id="navItems"> <a href="#Portfolio" class="navLinks">Portfolio</a></div>
+                        <div id="navItems"> <a href="#contact" class="navLinks">Contact</a></div>
+                        <div id="navItems"> <a href="bloglist.html" class="navLinks">Blog</a></div>
+                    </nav class= "desktopNav">
+               
                 <icons>    
                     <socialIcon><a class="fa fa-github" href ="https://github.com/seanlb02" target= "_blank"></a></socialIcon>
                     <socialIcon><a class="fa fa-linkedin" href="https://www.linkedin.com/in/sean-gyuris-72b5a1127/ "target= "_blank"></a></socialIcon>
                     <socialIcon><a class="fa fa-soundcloud" href="https://soundcloud.com/cult-trip-records"target= "_blank"></a></socialIcon>
+                    
                     <!-- this is for the 'hamburger' nav icon for mobile devices -->
                     <input type="checkbox" id="hamburger-nav" class="hamburger-nav">
                     <mobileNav>
@@ -40,8 +50,9 @@
                         <i class="fa fa-solid fa-bars fa-lg"></i> 
                     </label>
                 </icons>
-        </div class="links">
-        <navbar>
+        </div class="headerContainer">
+        <!-- this is the navbar for screens 600px-1100px (large mobiles and tablets) -->
+        <nav>
                 <!-- refer to readme: mozzilla needs <a tag> as well as name=""-->
                 <div class= "navcontent">
                     <div class="navItems"> <a href="cv.html">Resume</a></div>
@@ -49,7 +60,7 @@
                     <div class="navItems"> <a href="#contact">Contact</a></div>
                     <div class="navItems"> <a href="bloglist.html">Blog</a></div>
                 </div class= "navcontent">
-        </navbar>
+        </nav>
    </header> 
    
    <body>
@@ -62,7 +73,8 @@
                     <div class="image1"></div>
                     <div class="image2"></div>
                     <div class="image3"></div>
-                    <div class="image4"></div>                </article>     
+                    <div class="image4"></div>                
+                </article>     
             </section>
             
                 <section class="aboutContainer">
@@ -84,7 +96,6 @@
 
                 <section class="stackContainer">
                     <StackTitle>My Stack</StackTitle>
-                    <!-- this is for mobile -->
                     <section class="stackColumn">
                         <div id= "htmlThumb" class="thumbnail"></div>
                         <div id= "cssThumb" class="thumbnail"></div>
