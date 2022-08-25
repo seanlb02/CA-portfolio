@@ -706,7 +706,12 @@
            gap:0;
            
         }
-
+        .screenShot{
+            display:flex;
+          
+            overflow:visible;
+            object-fit:fill;
+        }
         .description{
             display:flex;
             flex:1;
@@ -731,35 +736,52 @@
             margin-right:0%;
         }
         .sample{
+            position:relative;
             max-height:25vw;
             max-width: 40vw;
             align-self: initial;
             /* display:flex;
             flex-direction:column; */
             margin-left:10%;
-        }
-
-        .sample:hover  .screenshotButtonOverlay{
-            display:flex;
-            cursor:pointer;
-            justify-content:center;
-            align-items:center;
-            min-height:100%;
-            gap:12%;
-            transform:translateY(-100%);
-            background-color: rgba(233, 207, 207, 0.75);
-         
-            opacity:0.95;
+            transition: .3s ease;
         
+
         }
         .screenshotButton{
             color:black;
+            transition: .5s ease;
 
         }
 
         .screenshotButtonOverlay{
             display:none;
+            position:absolute;
+            transition: .5s ease;
         }
+
+        .sample:hover .screenshotButtonOverlay{
+            display:flex;
+            cursor:pointer;
+            justify-content:center;
+            align-items:center;
+            /* min-height:max; */
+            /* gap:12%; */
+            /* transform:translateY(-115%); */
+            transform:none;
+            background-color: rgba(233, 207, 207, 0.75);
+            position:absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;   
+            transition: .5s ease;  
+            opacity:0.95;
+        
+        }
+
+
 
     }
 
