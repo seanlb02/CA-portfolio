@@ -331,7 +331,7 @@
         transform:translate(0%, 50%);
         overflow-y:hidden;
         overflow-x:visible;
-        background-image:url("/Assets/light.jpg");
+        background-image:url("/src/Assets/light.jpg");
         background-size: cover;
     }
 
@@ -344,7 +344,7 @@
         width: 35%;
         background-repeat: no-repeat;
         transform:translate(110%,80%);
-        background-image:url("/Assets/curvey.jpg");
+        background-image:url("/src/Assets/curvey.jpg");
         background-size: cover;
         overflow-y:hidden;
         overflow-x:visible;
@@ -359,7 +359,7 @@
         width: 50%;
         background-repeat: no-repeat;
         transform: translate(-10%,100%);
-        background-image:url("/Assets/technicolorsmall.jpg");
+        background-image:url("/src/Assets/technicolorsmall.jpg");
         background-size: cover;
         overflow-y:hidden;
         overflow-x:visible;
@@ -373,7 +373,7 @@
         width:60%;
         background-repeat: no-repeat;
         transform:translate(90%,110%);
-        background-image:url("/Assets/texture4.jpg");
+        background-image:url("/src/Assets/texture4.jpg");
         background-size: cover;
         overflow-y:hidden;
         overflow-x:visible;
@@ -818,5 +818,11 @@
         font-size: clamp(12px, 3vmax, 25px);
         border-top: 2px solid black;
         max-height:65px;
+    }
+
+    @media screen and (max-width:345px){
+        copyright{
+            display:none;
+        }
     }
 

@@ -13,7 +13,7 @@ h1 {
 @media screen and (max-width:600px){
     .header{
         font-size:clamp(20vw, 1rem, 1rem);
-        font-family: 'Times New Roman', Times, serif;
+        margin-top:-10%;
     }
 }
 
@@ -158,4 +158,10 @@ h1 {
     font-size: clamp(12px, 3vmax, 25px);
     overflow:hidden;
     max-height:100px;
+}
+
+@media screen and (max-width:345px){
+    copyright{
+        display:none;
+    }
 }

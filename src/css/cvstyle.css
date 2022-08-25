@@ -197,7 +197,7 @@ h1 {
     text-align:center;
     color:black;
     font-family: monospace;
-    font-size: clamp(20px, 5vw, 8vw);
+    font-size: clamp(1vw, 3rem, 8vw);
     margin:0;
 }
 
@@ -227,18 +227,19 @@ article{
     align-items: center;
     text-align:left;
 
-    margin-right:15%;
-    margin-left:15%;
+    margin-right:12%;
+    margin-left:12%;
     margin-bottom:15%;
 }
 
 h3{
     text-align: left;
-    margin: top 2px;
+    margin-top: 5%;
 }
 
 strong{
     text-align: left;
+    margin-top:3%;
 }
 .content{
     display:flex;
@@ -268,6 +269,17 @@ strong{
     color:white;
     padding:1%;
     font-family:monospace;
+}
+
+@media screen and (max-width:600px){
+    .downloadButton{
+        justify-content: center;
+        margin-bottom:3%;
+    
+    }
+    .CVcontainer{
+        margin-top:-10%;
+    }
 }
 
 @media screen and (max-width:200px){
