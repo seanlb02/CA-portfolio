@@ -22,11 +22,11 @@ HTML5, vanilla CSS3, Figma (wireframes), netlify (deployment)
 
 ## Site map
 
-![sitemap](/Docs/Sitemap.jpg)
+![sitemap](/Docs/Wireframes/Sitemap.jpg)
 
 ### Navigation map
 
-![navigation](/Docs/Navigationmap.jpg)
+![navigation](/Docs/Wireframes/Navigationmap.jpg)
 
 ---
 
@@ -48,7 +48,7 @@ mobile index.html:
 
 ### Index.html
 
-The homepage of the portfolio contains a number of stand-alone components positoned in a flex-column and divided using strong borders and background color contrasts. On screens less than 600px, the hero image component was removed, as was the primary navbar, which was moved to a 'hamburger'-style dropdown menu for mobile devices.
+The homepage of the portfolio contains a number of stand-alone components positoned in a flex-column and divided using strong borders and background color contrasts. On screens less than 600px, the hero image component was removed, as was the primary navbar, which was substituted for a 'hamburger'-style dropdown menu for mobile devices.
 
 Navigation items comprise <em>Resume</em>, <em>Portfolio</em>, <em>Contact</em> and <em>Blog</em>. To minimise page navigation for the user, the 'portfolio', 'about' and 'contact' components were included on the landing page (index.html), as seen here:
 
