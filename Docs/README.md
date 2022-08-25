@@ -56,11 +56,17 @@ Navigation items comprise <em>Resume</em>, <em>Portfolio</em>, <em>Contact</em> 
 
 This is the mobile screen (note 'hamburger' nav menu):
 
+---
+
 ![mobile](/Docs/screenshots/mobileindex.png)
+
+---
 
 the primary navbar was moved to the header on desktop screens to take advantage of larger real estate for the hero component:
 
 ![desktop](/Docs/screenshots/desktopNavbar.png)
+
+---
 
 Scroll down to bio, projects, stack, contact sections:
 
@@ -69,6 +75,8 @@ Scroll down to bio, projects, stack, contact sections:
 ![stackcomponent](/Docs/screenshots/stackcomponent.png)
 
 ![projectscomponent](Docs/screenshots/projectscomponent.png)
+
+---
 
 Project thumbnail links are styled with a hover feature, for desktop and tablets only.
 
