@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="/src/css/Indexstyle.css">
+        <title>Sean Gyuris portfolio</title>
+    </head>
+
+
+
+<div class="pageContainer">
+    <header>
+        <div class="headerContainer">
+                <p class="welcome"><a href="index.html" style="color:black;"><strong>Hello</strong>_world()</a></p>
+                
+                    <!-- refer to readme: mozzilla needs <a tag> as well as name=""-->
+                    <nav class= "desktopNav">
+                        <div id="navItems"> <a href="/html/cv.html" class="navLinks">Resume</a></div>
+                        <div id="navItems"> <a href="#Portfolio" class="navLinks">Portfolio</a></div>
+                        <div id="navItems"> <a href="#contact" class="navLinks">Contact</a></div>
+                        <div id="navItems"> <a href="/html/bloglist.html" class="navLinks">Blog</a></div>
+                    </nav class= "desktopNav">
+               
+                <icons>    
+                    <socialIcon><a class="fa fa-github" href ="https://github.com/seanlb02" target= "_blank"></a></socialIcon>
+                    <socialIcon><a class="fa fa-linkedin" href="https://www.linkedin.com/in/sean-gyuris-72b5a1127/ "target= "_blank"></a></socialIcon>
+                    <socialIcon><a class="fa fa-soundcloud" href="https://soundcloud.com/cult-trip-records"target= "_blank"></a></socialIcon>
+                    
+                    <!-- this is for the 'hamburger' nav icon for mobile devices -->
+                    <input type="checkbox" id="hamburger-nav" class="hamburger-nav">
+                    <mobileNav>
+                        <ul class="Navlist">
+                            <li><a href="cv.html">Resume</a></li>
+                            <li><a href="index.html#Portfolio">Portfolio</a></li>
+                            <li><a href="index.html#contact">Contact</a></li>
+                            <li><a href="bloglist.html">Blog</a></li>
+                            <icons class="hamburgerSocials">    
+                                <a class="fa fa-github" href ="https://github.com/seanlb02" target= "_blank"></a>
+                                <a class="fa fa-linkedin" href="https://www.linkedin.com/in/sean-gyuris-72b5a1127/ "target= "_blank"></a>
+                                <a class="fa fa-soundcloud" href="https://soundcloud.com/cult-trip-records"target= "_blank"></a>
+                            </icons>
+                        </ul>
+                    </mobileNav>
+                    <!-- this span is the actual hamburger icon -->
+                    <label for="hamburger-nav" class="hamburgerIcon">
+                        <i class="fa fa-solid fa-bars fa-lg"></i> 
+                    </label>
+                </icons>
+        </div class="headerContainer">
+        <!-- this is the navbar for screens 600px-1100px (large mobiles and tablets) -->
+        <nav>
+                <!-- refer to readme: mozzilla needs <a tag> as well as name=""-->
+                <div class= "navcontent">
+                    <div class="navItems"> <a href="cv.html">Resume</a></div>
+                    <div class="navItems"> <a href="#Portfolio">Portfolio</a></div>
+                    <div class="navItems"> <a href="#contact">Contact</a></div>
+                    <div class="navItems"> <a href="bloglist.html">Blog</a></div>
+                </div class= "navcontent">
+        </nav>
+   </header> 
+   
+   <body>
+        <main class="bodyContainer">
+            <section class="centerPiece">
+                <tagline>
+                    Let's build <span id="cycle"></span>
+                </tagline>  
+                <article class="imageCircles">
+                    <div class="image1"></div>
+                    <div class="image2"></div>
+                    <div class="image3"></div>
+                    <div class="image4"></div>                
+                </article>     
+            </section>
+            
+                <section class="aboutContainer">
+                        <AboutTitle>About me</AboutTitle>
+                        <AboutSection>
+                            <p>Hi. My name is Sean Gyuris.
+                            <br>
+                            <br>
+                            I am a junior full-stack developer who <em>[will]</em> currently builds with HTML/CSS, ReactJS and Flask.
+                            <br>
+                            <br>My past projects <em>[will]</em> feature a range of functionalities not limited to: profile creation,
+                                payments integration (Stripe), paywalls and media players. 
+                            <br>
+                            <br>
+                            I <em>[will]</em> take pride in writing clean code using an agile approach both collaboratively and solo.
+                            </p>
+                        </AboutSection>
+                </section>
+
+                <section class="stackContainer">
+                    <StackTitle>My Stack</StackTitle>
+                    <section class="stackColumn">
+                        <div id= "htmlThumb" class="thumbnail"></div>
+                        <div id= "cssThumb" class="thumbnail"></div>
+                        <div id= "tailwindThumb" class="thumbnail"></div>
+                        <div id= "reactThumb" class="thumbnail"></div>
+                        <div id= "nextThumb" class="thumbnail"></div>
+                        <div id= "nodeThumb" class="thumbnail"></div>
+                        <div id= "pythonThumb" class="thumbnail"></div>
+                        <div id= "flaskThumb" class="thumbnail"></div>
+                        <div id= "linuxThumb" class="thumbnail"></div>
+                        <div id= "postThumb" class="thumbnail"></div> 
+                    </section>
+
+            </section>
+                    <section class="portfolioContainer" id="Portfolio">
+                        <WorkTitle>My projects</WorkTitle>
+                        <div class="thumbnailGrid">
+
+                            <section class="project">
+                                <figure class="sample">
+                                    <img src="/src/Assets/spotify.png" alt="colored screenshot of 'project 1'" class="screenShot">
+                                    <div class="screenshotButtonOverlay">
+                                        <div class="screenshotButton">Live</div>
+                                        <div class="screenshotButton">Code</div>
+                                    </div>
+                                    
+                                </figure>
+                                <figcaption class="description">
+                                    <h3>Project 1</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo corrupti est alias, quos nam molestiae dicta. Praesentium ea eligendi rerum?</p>
+                                </figcaption>
+                            </section>
+                            <section class="project2">
+                                <figure class="sample">
+                                    <img src="/src/Assets/dicord.png" alt="colored screenshot of 'project 2'" class="screenShot"></object>
+                                    <div class="screenshotButtonOverlay">
+                                        <div class="screenshotButton">Live</div>
+                                        <div class="screenshotButton">Code</div>
+                                    </div>
+                                </figure>
+                                <figcaption class="descriptionReverse">
+                                    <h3>Project 2</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur ex fugit natus itaque eaque provident blanditiis tempore reiciendis voluptatem soluta.</p>
+                                </figcaption>
+                            </section>
+                            <section class="project">
+                                <figure class="sample">
+                                    <img src="/src/Assets/github.png" alt="colored screenshot of 'project 3'" class="screenShot">
+                                    <div class="screenshotButtonOverlay">
+                                        <div class="screenshotButton">Live</div>
+                                        <div class="screenshotButton">Code</div>
+                                    </div>
+                                </figure>
+                                <figcaption class="description">
+                                    <h3>Project 3</h3>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla odio, adipisci eum illum totam repudiandae quis officiis perspiciatis dolorem voluptatum?</p>
+                                </figcaption>
+                            </section>
+                        </div>
+                    </section>
+                
+                <!-- refer to readme: both id&name are needed for mozilla&chrome -->
+                <div id="contact" class="contact">
+                        <contactTitle>All enquiries</contactTitle>
+                        <a class="email" href = "mailto: 12708@coderacademy.edu.au">12708@coderacademy.edu.au</a>
+                        
+                </div>
+        </main>
+        
+    </body>
+
+    <footer>
+                    <p class="welcome">&#60;/Goodbye_world&#62;</p>
+                    <copyright>
+                        <p>&copy; Sean Gyuris</p>
+                    </copyright>
+
+
+    </footer>
+</div>
+
+
+
+
+
+
+
+
+</html>
