@@ -1,14 +1,14 @@
 # Portfolio Documentation
 
 ---
-### <a href="https://thriving-treacle-8b6b78.netlify.app/index.html">Live site</a>
+### <a href="https://thriving-treacle-8b6b78.netlify.app">Live site</a>
 ### <a>Git repo</a>
 
 ---
 
 ## Purpose and Target Audience
 
-This online dev portfolio is intended to provide a general background on myself and my past experience as well as to demonstrate my abilities in static web development with HTML5 and CSS3. 
+This online dev portfolio is intended to provide a general background on myself and to demonstrate my abilities in static web development with HTML5 and CSS3.
 
 The site is intended for prospective employers, potential collaborators and future clients.
 
@@ -32,7 +32,7 @@ HTML5, vanilla CSS3, Figma (wireframes), netlify (deployment)
 
 ## Wireframes and design
 
-I decided to implement a simple flex-column layout for much of the portfolio. To avoid cluttering of features I segregated components with hard borders and background color shifts. Below are some examples of wireframes I used during the design process. Wireframes constructed using Figma.
+I decided to implement a flex-column layout for the page structure in both web and mobile designs, which not only simplified the amount of media queries used, it avoided re. To avoid cluttering, I seperated components with hard borders and background color contrasts. Below are some examples of wireframes I used during the design process. Wireframes were constructed using Figma.
 
 Desktop index.html:
 
