@@ -127,6 +127,7 @@ h1 {
 .blurb{
     margin-bottom:8%;
     margin-top:5%;
+    margin-right:10%;
     font-size: clamp(0.8rem, 0.5vw,1rem);
 
 }
