@@ -3,7 +3,9 @@ html{
     flex-direction:column;
 }
 
-
+#imposter {
+    color:black;
+}
 
 h1 {
     text-align:left;
@@ -125,7 +127,7 @@ h1 {
 }
 
 .blurb{
-    margin-bottom:8%;
+    margin-bottom:4%;
     margin-top:5%;
     margin-right:10%;
     font-size: clamp(0.8rem, 0.5vw,1rem);

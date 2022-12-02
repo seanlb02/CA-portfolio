@@ -186,7 +186,7 @@
             justify-content: center;
             font-family: monospace;
         }
-        #navItems{
+        .navButtons{
             display:flex; 
         font-size: 1.5rem;
         color:black;
@@ -194,7 +194,7 @@
 
         }
         .navLinks{
-            color:black;
+            color:white;
             
         }
         .navLinks:hover{
@@ -754,13 +754,17 @@
         }
 
         .screenshotButtonOverlay{
-            display:none;
+            /* display:none; */
+            visibility:hidden;
             position:absolute;
-            transition: .5s ease;
+            opacity:0;
+           
         }
 
         .sample:hover .screenshotButtonOverlay{
-            display:flex;
+            /* display:flex; */
+            visibility:visible;
+            opacity:1;
             cursor:pointer;
             justify-content:center;
             align-items:center;
@@ -776,7 +780,7 @@
             right: 0;
             height: 100%;
             width: 100%;   
-            transition: .5s ease;  
+            transition: opacity 0.5s linear;  
             opacity:0.95;
         
         }

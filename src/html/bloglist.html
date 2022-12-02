@@ -15,10 +15,10 @@
             <div class="headerContainer">
                     <p class="welcome"><a href="/index" style="color:black;"><strong>Hello</strong>_world()</a></p>
                     <nav class= "desktopNav">
-                        <div id="navItems"> <a href="/src/html/cv" class="navLinks">Resume</a></div>
-                        <div id="navItems"> <a href="/index#Portfolio" class="navLinks">Portfolio</a></div>
-                        <div id="navItems"> <a href="/index#contact" class="navLinks">Contact</a></div>
-                        <div id="navItems"> <a href="/src/html/bloglist" class="navLinks">Blog</a></div>
+                        <div class="navButtons"> <a href="/src/html/cv" class="navLinks">Resume</a></div>
+                        <div class="navButtons"> <a href="/index#Portfolio" class="navLinks">Portfolio</a></div>
+                        <div class="navButtons"> <a href="/index#contact" class="navLinks">Contact</a></div>
+                        <div class="navButtons"> <a href="/src/html/bloglist" class="navLinks">Blog</a></div>
                     </nav class= "desktopNav">
                     
                     <icons>    
@@ -60,51 +60,52 @@
  
 <div class="Container">
        <section class="blogs">
-           <h1 class="header">Blog<span class="blinkingCursor">|</span></h1>
+           <h1 class="header">(Project) logs<span class="blinkingCursor">|</span></h1>
            <article class="preview">
                 <a id="link" href="blog1">
-                    <h1 class="blogTitle">Blog 1</h1>
+                    <h1 class="blogTitle">Plog 4</h1>
                     <img class="blogThumbnail" alt="thumbnail of blog1 title image" src="/src/Assets/dicord.png" >
-                    <p><em>21/8/22</em></p>
-                    <p class="blurb">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, iure labore. Molestiae iusto ratione magnam quibusdam assumenda est minima labore reprehenderit facilis, cumque, voluptatum nam corrupti, nobis optio impedit placeat!</p>
+                    <p><em>30/11/22</em></p>
+                    <p class="blurb">I've been toying with the idea of personalised merch in an attempt to bypass the crippling onset of imposter syndrome that comes after scrolling through <em><a id="imposter" href="https://www.hoverstat.es/">hoverstat.es</a></em>.</p>
                 </a>
            </article>
 
            <article class="preview">
                 <a id="link" href="blog2">
-                    <h1 class="blogTitle">Blog 2</h1>
+                    <h1 class="blogTitle">Plog 3</h1>
                     <img class="blogThumbnail" alt="thumbnail of blog2 title image" src="/src/Assets/dicord.png" >
                     <p><em>18/8/22</em></p>
-                    <p class="blurb">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam dolorum illum id quo consequuntur magni cum cupiditate. Soluta vitae, sed illum distinctio rem corrupti alias, modi inventore aliquid eaque odit!</p>
+                    <p class="blurb">Got started building out a NextJS front end for the Narma anxiety messaging app. Ending up as some good SSR practice and connecting to a non-nodeJS backend API. Styled with Tailwind.</p>
                 </a>      
             </article>
 
             <article class="preview">
                 <a id="link" href="blog3">
-                    <h1 class="blogTitle">Blog 3</h1>
-                    <img class="blogThumbnail" alt="thumbnail of blog3 title image" src="/src/Assets/dicord.png" >
+                    <h1 class="blogTitle">Plog 2</h1>
+                    <img class="blogThumbnail" alt="thumbnail of blog3 title image" src="/src/Assets/joggrscreenshot.png" >
+                    <p><em>17/10/22</em></p>
+                    <p class="blurb">Had the idea to give people with anxiety and depression a virtual friends group/support network in the form of a one-way messaging app (think a non-horrible snapchat). Simulated personas are set up and run by the company, qnd send whoever follows them jokes, memes, news, local events, movie recco's, mental health resources -- all in healthy doses throughout the day. No more doom-scrolling. I built the backend API server for this with Flask (python) for uni.</p>
+                </a>
+            </article>
+
+            <article class="preview">
+                <a id="link" href="blog3">
+                    <h1 class="blogTitle">Plog 2</h1>
+                    <img class="blogThumbnail" alt="thumbnail of blog3 title image" src="/src/Assets/ctwebsite.png" >
                     <p><em>17/8/22</em></p>
-                    <p class="blurb">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, iure labore. Molestiae iusto ratione magnam quibusdam assumenda est minima labore reprehenderit facilis, cumque, voluptatum nam corrupti, nobis optio impedit placeat!</p>
+                    <p class="blurb">Aiming to get some fundamental CSS and GSAP practice in with this static website for my old, now defunct, record label. Used NextJS for this one and will hopefully get stuck into the Shopify JS SDK later on too</p>
                 </a>
             </article>
  
             <article class="preview">
                 <a id="link" href="blog4">
-                    <h1 class="blogTitle">Blog 4</h1>
-                    <img class="blogThumbnail" alt="thumbnail of blog4 title image" src="/src/Assets/dicord.png" >
+                    <h1 class="blogTitle">Plog 1</h1>
+                    <img class="blogThumbnail" alt="thumbnail of blog4 title image" src="/src/Assets/FilmSpot.png" >
                     <p><em>14/8/22</em></p>
-                    <p class="blurb">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam dolorum illum id quo consequuntur magni cum cupiditate. Soluta vitae, sed illum distinctio rem corrupti alias, modi inventore aliquid eaque odit!</p>
+                    <p class="blurb">My first official project was a terminal app I did for uni with python called FilmSpot. Its a database at heart, based off IMdBs top 1000 movies of all time. Users can create an account, search the list, get reccomendations, save movies to a watch list (some old fashun'd picklin') and play FilmSpot trivia.</p>
                 </a>
              </article>
 
-             <article class="preview">
-                <a id="link" href="blog5">
-                    <h1 class="blogTitle">Blog 5</h1>
-                    <img class="blogThumbnail" alt="thumbnail of blog5 title image" src="/src/Assets/dicord.png" >
-                    <p><em>12/8/22</em></p>
-                    <p class="blurb">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam dolorum illum id quo consequuntur magni cum cupiditate. Soluta vitae, sed illum distinctio rem corrupti alias, modi inventore aliquid eaque odit!</p>
-                </a>
-                </article>
        </section>
 
         <section class="sidebar">
