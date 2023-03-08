@@ -402,7 +402,7 @@
     /* this is the animation css for the text reel */
     #cycle:after {
         animation-name: cycle; 
-        animation-duration: 7s;
+        animation-duration: 8s;
         animation-iteration-count: infinite;
         content: ""; 
       }
@@ -442,7 +442,7 @@
     AboutTitle{
         display: flex;
         align-items: left;
-        margin-left:12%;
+        margin-left:13%;
         font-size: clamp(24px,3vmax, 2.5vmax);
         font-family: monospace;
         background-color: #e1e1e6;
@@ -548,6 +548,9 @@
         #postThumb{
             background-image:url("https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg");
 
+        }
+        #mongoThumb{
+            background-image:url("https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original-wordmark.svg")
         }
 
 
@@ -842,9 +845,11 @@
         width:100vw;
         display:flex;
         align-items: center;
+        align-content: center;
         font-size: clamp(12px, 3vmax, 25px);
         border-top: 2px solid black;
-        max-height:65px;
+       
+        max-height:110px;
     }
 
     @media screen and (max-width:345px){
