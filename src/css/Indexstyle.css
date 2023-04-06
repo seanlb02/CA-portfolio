@@ -335,6 +335,31 @@
         background-size: cover;
     }
 
+    #image1{
+        animation-name: image1;
+        animation-duration: 50s;
+        /* transition:0.3s ease-in-out;
+        transform: translate(50%, 100%) */
+        animation-iteration-count: infinite;
+        /* -moz-transform: translate(0, 10em); */
+       
+    }
+
+    @keyframes image1 {
+        0% {
+            transform: translate(0%, 50%);
+        }
+
+       50% {
+        transform: translate(-15%, 70%)
+       }
+
+        100% {
+            /* opacity:1; */
+            transform: translate(0%, 50%);
+        }
+    }
+
     .image2{
       
         border-radius:50%;
@@ -348,6 +373,31 @@
         background-size: cover;
         overflow-y:hidden;
         overflow-x:visible;
+    }
+
+    #image2{
+        animation-name: image2;
+        animation-duration: 55s;
+        /* transition:0.3s ease-in-out;
+        transform: translate(50%, 100%) */
+        animation-iteration-count: infinite;
+        /* -moz-transform: translate(0, 10em); */
+       
+    }
+
+    @keyframes image2 {
+        0% {
+            transform: translate(110%, 80%);
+        }
+
+       50% {
+        transform: translate(60%, 50%)
+       }
+
+        100% {
+            /* opacity:1; */
+            transform: translate(110%, 80%);
+        }
     }
 
     .image3{
@@ -365,6 +415,31 @@
         overflow-x:visible;
     }
 
+    #image3{
+        animation-name: image3;
+        animation-duration: 50s;
+        /* transition:0.3s ease-in-out;
+        transform: translate(50%, 100%) */
+        animation-iteration-count: infinite;
+        /* -moz-transform: translate(0, 10em); */
+       
+    }
+
+    @keyframes image3 {
+        0% {
+            transform: translate(-10%, 100%);
+        }
+
+       50% {
+        transform: translate(20%, 100%)
+       }
+
+        100% {
+            /* opacity:1; */
+            transform: translate(-10%, 100%);
+        }
+    }
+
     .image4{
         display:flex;
         position:absolute;
@@ -377,7 +452,36 @@
         background-size: cover;
         overflow-y:hidden;
         overflow-x:visible;
+        
+
   
+    }
+
+    #image4{
+        animation-name: image4;
+        animation-duration: 54s ;
+        /* transition:0.3s ease-in-out;
+        transform: translate(50%, 100%) */
+        animation-iteration-count: infinite;
+        /* -moz-transform: translate(0, 10em); */
+       
+    }
+
+    @keyframes image4 {
+        0% {
+            transform: translate(90%, 110%);
+        }
+
+       40% {
+        transform: translate(70%, 100%)
+       }
+       70% {
+        transform: translate(80%, 85%)
+       }
+        100% {
+            /* opacity:1; */
+            transform: translate(90%, 110%);
+        }
     }
 
 
