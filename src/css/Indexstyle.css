@@ -257,7 +257,18 @@
         margin-bottom:0%;
         align-items:center;
         justify-content: center;
+        animation-name: reel;
+        animation-duration:2s;
+    }
 
+    @keyframes reel {
+        0% {
+            opacity:0;
+        }
+
+        100% {
+            opacity:1;
+        }
     }
 
 
