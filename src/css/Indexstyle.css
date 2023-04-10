@@ -112,6 +112,7 @@
         background-color: black;
         color: white;
         border: solid black;
+        transition: top 2s
 
     }
     @media screen and (max-width: 600px){
@@ -201,8 +202,6 @@
             opacity:0.7;
         }
     }
-
-
 
     @media screen and (max-width:1100px){
         .desktopNav{
@@ -304,6 +303,16 @@
             }
         }
 
+        .bottomPiece{
+            margin-top:0%;
+            padding-top:0%;
+            position:relative;
+            display:flex;
+            flex:100%;
+            margin-bottom:0%;
+            align-items:center;
+            justify-content: center;
+        }
     tagline{
         color:black;
         z-index:3;
@@ -330,6 +339,18 @@
         overflow-x:hidden;
  
     }
+    .imageCirclesMobile {
+        position:relative;
+        padding-left:7%;
+         display:flex;
+         flex:1;
+         /* border:solid yellow; */
+         height:50vh;
+         width:100vw;
+         overflow-y:hidden;
+         overflow-x:hidden;
+  
+     }
 
    
 
@@ -388,7 +409,7 @@
 
     #image2{
         animation-name: image2;
-        animation-duration: 55s;
+        animation-duration: 60s;
         /* transition:0.3s ease-in-out;
         transform: translate(50%, 100%) */
         animation-iteration-count: infinite;
@@ -502,6 +523,12 @@
         }
     }
 
+    @media screen and (min-width:600px){
+        .imageCirclesMobile{
+            display:none;
+        }
+    }
+
     /* this centers the centerpiece tagline on small phones */
     @media screen and (min-width: 430px){
         .tagline{
@@ -545,30 +572,38 @@
 
     .aboutContainer{
         z-index:2;
+        display:flex;
+        flex-direction: column;
         background-color: #e1e1e6;
         padding-top:5%;
         padding-bottom:6%;
         padding-right:6%;
         width: auto;
         border-top: 2px solid black;
-        margin-inline: auto;
+        /* margin-inline: auto; */
     }
     /* css for the 'about me' section */
     AboutTitle{
         display: flex;
         align-items: left;
         margin-left:13%;
-        font-size: clamp(24px,3vmax, 2.5vmax);
+        font-size: clamp(24px,3.5vmax, 2.5vmax);
         font-family: monospace;
         background-color: #e1e1e6;
         max-width: 100%;
     }
-
+    .expertise {
+        text-align:left;
+        width: 100%;
+        padding-left:10%;
+    }
     AboutSection{
         display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: left;
         padding-left: 30%;
+        padding-right:10%;
         margin-top: 2%;
         text-align: left;
         font-family: monospace;
@@ -581,10 +616,17 @@
     /* this centers the 'about me' text on mobiles */
     @media screen and (max-width:450px){
         AboutSection{
-            padding:10%;
+            padding:20%;
+            padding-top:5%;
+            padding-right:5%;
             justify-content:center;
+            text-align: justify;
         }
-
+        .expertise {
+            text-align:left;
+            padding-left:15%;
+        
+        }
     }
 
         .stackContainer{
@@ -599,7 +641,7 @@
         StackTitle{
             display: flex;
             margin-left:12%;
-            font-size: clamp(24px,3vmax, 2.5vmax);
+            font-size: clamp(24px,3.5vmax, 2.5vmax);
             font-family: monospace;
             background-color: white;
             max-width: 100%;
@@ -735,6 +777,7 @@
      text-align: justify;
      font-size: clamp(0.8rem, 0.5vw,1rem);
      margin-left:10%;
+   
      margin-right:10%;
      margin-bottom:10%;
       color:white;
@@ -756,7 +799,10 @@
      
     }
 
-
+h3 {
+    text-align:left;
+    padding-bottom:2%;
+}
     .screenShot{
        
         display:flex;
@@ -913,15 +959,25 @@
       
         justify-content: center;
         justify-items: center;
-        margin-top: 10%;
-        
-        margin-bottom: 10%;
+        margin-top: 15%;
+        margin-bottom:15%;
+     
         align-items: center;
         justify-content: center;
         font-family: monospace;
         margin-inline: auto;
         max-width: 100%;
     }
+    @media screen and (max-width:450px){
+        .contact {
+            margin-bottom: 0%;
+        }
+        .email{
+            font-size: clamp(10px, 2vmax, 15px);
+        }
+    }
+
+
     contactTitle{
         display: flex;
         align-items: left;
