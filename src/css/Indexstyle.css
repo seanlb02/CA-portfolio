@@ -551,22 +551,22 @@
     
     @keyframes cycle {
       0% {
-        content: "things.";
+        content: "stuff";
       }
       20% {
-        content: "a website";
+        content: "that website";
       }
       40% {
-        content: "a web app";
+        content: "that web app";
       }
       60% {
-          content: "a mobile app"
+          content: "that mobile app"
       }
       80% {
-        content: "a PWA";
+        content: "that API";
       }
       100%{
-          content: "things."
+          content: "stuff"
       }
     }
 
